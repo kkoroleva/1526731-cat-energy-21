@@ -9,13 +9,13 @@
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src='https://placehold.it/34x38?text=logo-image' alt='Логотип Кэт энерджи' />
+      <img class="page-header__logo-image" src="https://placehold.it/34x38?text=logo-image" alt="Логотип Кэт энерджи" />
     </a>
-    <a class="page-header__logo-mobile logo-text">
-      <img class="page-header__logo-image-text" src="https://via.placeholder.com/101x18">
+    <a class="page-header__logo-mobile logo-mobile">
+      <img class="logo-mobile__image" src="https://via.placeholder.com/101x18">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle main-nav__toggle-close" type="button" aria-valuetext="Открыть меню">X</button>
+      <button class="main-nav__toggle main-nav__toggle--close" type="button" aria-valuetext="Открыть меню">X</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -38,7 +38,7 @@
     </nav>
   </header>
 
-  <main class="page__main">
+  <main class="page__main page-form">
     <form action="https://echo.htmlacademy.ru/" class="form">
       <h1 class="form__main-headline">Подбор программы</h1>
       <p class="form__preword">
@@ -118,20 +118,20 @@
     </form>
   </main>
 
-  <footer class="page-footer page-footer--form-page">
+  <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <div class="page-footer__address">
+      <div class="page-footer__address address">
         <div class="address__directions-wrapper">
           <b class="address__slogan">приглашаем к сотрудничеству дилеров!</b>
           <address class="address__directions">
             ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
           </address>
         </div>
-        <img class="address__map" src='https://dummyimage.com/320x362.jpg' alt='Карта местоположения' />
+        <img class="address__map" src="https://dummyimage.com/320x362.jpg" alt="Карта местоположения" />
       </div>
-      <div class="page-footer__socials">
+      <div class="page-footer__socials socials">
         <a class="socials__logo-link logo-text">
-          <img class="socials__logo-image-text" src="https://via.placeholder.com/128x24">
+          <img class="logo-text__image" src="https://via.placeholder.com/128x24">
         </a>
         <div class="socials__wrapper">
           <ul class="socials__list">
@@ -152,14 +152,12 @@
             </li>
           </ul>
         </div>
-        <div class="socials__copyright">
-          <cite class="copyright__author">
-            <a href="https://htmlacademy.ru/">
-              HTML Academy
-            </a>
-          </cite>
+        <div class="socials__copyright copyright">
+          <a href="https://htmlacademy.ru/">
+            HTML Academy
+          </a>
           <a class="copyright__logo" href="https://htmlacademy.ru/">
-            <img src='https://dummyimage.com/27x34.png' alt='HTML Academy' />
+            <img src="https://dummyimage.com/27x34.png" alt="HTML Academy" />
           </a>
         </div>
       </div>
