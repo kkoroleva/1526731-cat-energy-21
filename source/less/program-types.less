@@ -1,4 +1,4 @@
-@import url(styleguide.less);
+@import url("styleguide.less");
 
 .program-types {
   width: 320px;
@@ -61,7 +61,7 @@
   margin: 0 0 25px;
   padding: 0 0 23px;
   border-bottom: 1px solid @divider;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -86,7 +86,7 @@
   display: block;
   position: absolute;
   top: 16px/2;
-  left: 87px+15px;
+  left: 87px + 15px;
   width: 32px;
   height: 10px;
   background-image: url("../img/program-types__link.svg");
@@ -95,10 +95,11 @@
 }
 
 .program-types__link:hover::after {
-  left: 87px+15px+4px;
+  left: 87px + 15px + 4px;
   background-image: url("../img/program-types__link--hover.svg");
 }
 
-.program-types__link:focus, .program-types__link:focus::after {
+.program-types__link:focus,
+.program-types__link:focus::after {
   opacity: @link-text-pressed-opacity;
 }
