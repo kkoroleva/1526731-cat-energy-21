@@ -1,1 +1,60 @@
 // Начните писать стили здесь
+
+@import url(styleguide.less);
+@import url(main-nav.less);
+@import url(promo.less);
+@import url(program-types.less);
+@import url(how.less);
+@import url(example.less);
+@import url(address.less);
+@import url(socials.less);
+@import url(copyright.less);
+
+
+
+/*hidden objects*/
+
+.visually-hidden {
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page__body {
+  box-sizing: border-box;
+  min-width: 320px;
+  padding: 12px auto 0;
+  background-color: @basic-white;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-footer {
+  width: 320px;
+  margin: 0 auto;
+  background-color: @basic-grey;
+}
+
+.page-footer__address {
+  margin: 0;
+  padding: 0;
+}
+
+.page-footer__socials {
+  margin: 0 20px;
+}
+
+
