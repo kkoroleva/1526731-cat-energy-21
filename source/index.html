@@ -4,18 +4,22 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body main-page">
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="https://placehold.it/34x38?text=logo-image" alt="Логотип Кэт энерджи" />
+      <img class="page-header__logo-image" src="img/page-header__logo-image.png" alt="Логотип Кэт энерджи" />
     </a>
     <a class="page-header__logo-mobile logo-mobile">
-      <img class="logo-mobile__image" src="https://via.placeholder.com/101x18">
+      <img class="logo-mobile__image" src="img/logo-mobile__image.png">
     </a>
+    <button class="main-nav__toggle main-nav__toggle--close" type="button" aria-valuetext="Открыть меню">X</button>
     <nav class="main-nav main-nav--light">
-      <button class="main-nav__toggle main-nav__toggle--close" type="button" aria-valuetext="Открыть меню">X</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
@@ -41,23 +45,21 @@
   <main class="page__main">
     <h1 class="visually-hidden">"Кэт Энерджи" - функциональное питание для котов</h1>
     <section class="promo">
-      <div class="promo__wrapper">
-        <h2 class="promo__headline promo__headline--dark">Функциональное питание для котов</h2>
-        <p class="promo__text promo__text--dark">
-          Занялся собой? Займись котом!
-        </p>
-        <img class="promo__image" src="https://dummyimage.com/280x280.png?text=product-example"
-          alt="Пример продукта компании" />
-        <a href="form.html" class="button promo__button">
-          Подобрать программу
-        </a>
-      </div>
+      <div class="promo__special-background"></div>
+      <h2 class="promo__headline promo__headline--dark">Функциональное питание для котов</h2>
+      <p class="promo__text promo__text--dark">
+        Занялся собой? Займись котом!
+      </p>
+      <img class="promo__image" src="img/promo__image.png" alt="Пример продукта компании" />
+      <a href="form.html" class="promo__button">
+        Подобрать программу
+      </a>
     </section>
     <section class="program-types">
       <h2 class="visually-hidden">Виды программ питания</h2>
       <ul class="program-types__list">
-        <li class="program-types__item program-types__item--slim">
-          <h3 class="program-types__preview-headline">Похудение</h3>
+        <li class="program-types__item">
+          <h3 class="program-types__preview-headline program-types__preview-headline--slim">Похудение</h3>
           <p class="program-types__preview">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
             Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
@@ -65,8 +67,8 @@
             Каталог SLIM
           </a>
         </li>
-        <li class="program-types__item program-types__item--gain">
-          <h3 class="program-types__preview-headline">Набор массы</h3>
+        <li class="program-types__item">
+          <h3 class="program-types__preview-headline program-types__preview-headline--gain">Набор массы</h3>
           <p class="program-types__preview">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
             поможет вашему коту нарастить необходимые мышцы!
           </p>
@@ -111,63 +113,59 @@
       </ul>
       <b class="example__price">Затраты на питание: 15 000 РУБ.</b>
       <div class="example__from-to-wrapper">
-        <img class="example__image example__image--from" src="https://dummyimage.com/311x232.png?text=example-image"
-          alt="Борис ДО" />
-        <img class="example__image example__image--to" src="https://dummyimage.com/311x232.png?text=example-image"
-          alt="Борис ПОСЛЕ" />
+        <img class="example__image example__image--from" src="img/example__image--from.png" alt="Борис ДО" />
+        <img class="example__image example__image--to" src="img/example__image--to.png" alt="Борис ПОСЛЕ" />
         <div class="example__from-to-toggle from-to-toggle">
-          <span class="from-to-toggle__span-from">БЫЛО</span>
-          <div class="from-to-toggle__range">
-            полоска
+          <span class="from-to-toggle__span from-to-toggle__span--from">БЫЛО</span>
+          <div class="from-to-toggle__range range">
+            <div class="range__thumb"></div>
           </div>
-          <span class="from-to-toggle__span-to">СТАЛО</span>
+          <span class="from-to-toggle__span from-to-toggle__span--to">СТАЛО</span>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <div class="page-footer__address address">
-        <div class="address__directions-wrapper">
-          <b class="address__slogan">приглашаем к сотрудничеству дилеров!</b>
-          <address class="address__directions">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </address>
-        </div>
-        <img class="address__map" src="https://dummyimage.com/320x362.jpg" alt="Карта местоположения" />
+    <div class="page-footer__address address">
+      <div class="address__directions-wrapper">
+        <b class="address__slogan">приглашаем к сотрудничеству дилеров!</b>
+        <address class="address__directions">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </address>
       </div>
-      <div class="page-footer__socials socials">
-        <a class="socials__logo-link logo-text">
-          <img class="logo-text__image" src="https://via.placeholder.com/128x24">
+      <img class="address__map" src="img/page-footer__address.jpg" width="320" alt="Карта местоположения" />
+    </div>
+    <div class="page-footer__socials socials">
+      <a class="socials__logo-link logo-text">
+        <img class="logo-text__image" src="img/logo-text__image.png">
+      </a>
+      <div class="socials__wrapper">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--vk">
+              <p class="visually-hidden">Вконтакте</p>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--ig">
+              <p class="visually-hidden">Инстаграмм</p>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--fb">
+              <p class="visually-hidden">Фейсбук</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="socials__copyright copyright">
+        <a class="copyright__text" href="https://htmlacademy.ru/">
+          HTML Academy
         </a>
-        <div class="socials__wrapper">
-          <ul class="socials__list">
-            <li class="socials__item">
-              <a href="#" class="socials__link socials__link--vk">
-                Вконтакте
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="#" class="socials__link socials__link--ig">
-                Инстаграмм
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="#" class="socials__link socials__link--fb">
-                Фейсбук
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="socials__copyright copyright">
-          <a href="https://htmlacademy.ru/">
-            HTML Academy
-          </a>
-          <a class="copyright__logo" href="https://htmlacademy.ru/">
-            <img src="https://dummyimage.com/27x34.png" alt="HTML Academy" />
-          </a>
-        </div>
+        <a class="copyright__logo" href="https://htmlacademy.ru/">
+          <img src="img/logo-html-academy.svg" alt="HTML Academy" />
+        </a>
       </div>
     </div>
   </footer>
