@@ -1,0 +1,104 @@
+
+.program-types {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.program-types__list {
+  .list-reset;
+}
+
+.program-types__item {
+  position: relative;
+  margin: 0 0 20px;
+  padding: 30px 20px 18px;
+  background-color: @basic-grey;
+}
+
+.program-types__item:last-of-type {
+  margin: 0;
+}
+
+.program-types__preview-headline {
+  position: relative;
+  margin: 0 0 29px;
+  text-align: center;
+  .set-special-font;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: @basic-black;
+}
+
+.program-types__preview-headline--slim::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -9px;
+  left: 2px;
+  width: 50px;
+  height: 53px;
+  background-image: url("../img/program-types__item--slim.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.program-types__preview-headline--gain::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -6px;
+  left: -7px;
+  width: 67px;
+  height: 50px;
+  background-image: url("../img/program-types__item--gain.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.program-types__preview {
+  margin: 0 0 25px;
+  padding: 0 0 23px;
+  border-bottom: 1px solid @divider;
+  .set-basic-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: @basic-text;
+}
+
+.program-types__link {
+  position: relative;
+  .link-normalize;
+  .set-special-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.program-types__link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 16px/2;
+  left: 87px + 15px;
+  width: 32px;
+  height: 10px;
+  background-image: url("../img/program-types__link.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.program-types__link:hover::after {
+  left: 87px + 15px + 4px;
+  background-image: url("../img/program-types__link--hover.svg");
+}
+
+.program-types__link:focus,
+.program-types__link:focus::after {
+  opacity: @link-text-pressed-opacity;
+}

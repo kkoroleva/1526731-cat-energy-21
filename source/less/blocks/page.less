@@ -1,0 +1,52 @@
+.page {
+  &__body {
+    min-width: @mobile-screen;
+  }
+
+  &__header {
+    width: @mobile-screen;
+    margin: 0 auto;
+
+    @media (min-width: @tablet-screen) {
+      width: @tablet-screen;
+    }
+
+    @media (min-width: @desktop-screen) {
+      width: @desktop-screen;
+    }
+  }
+
+  &__main {
+    width: @mobile-screen;
+    margin: 0 auto;
+
+    @media (min-width: @tablet-screen) {
+      width: @tablet-screen;
+    }
+
+    @media (min-width: @desktop-screen) {
+      width: @desktop-screen;
+    }
+  }
+
+  &__footer {
+    width: 320px;
+    margin: 0 auto;
+    background-color: @basic-grey;
+
+    @media (min-width: @tablet-screen) {
+      width: @tablet-screen;
+    }
+
+    @media (min-width: @desktop-screen) {
+      width: @desktop-screen;
+    }
+  }
+
+}
+
+
+
+.page-footer__socials {
+  margin: 0 20px;
+}
