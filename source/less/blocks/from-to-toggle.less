@@ -1,0 +1,41 @@
+.from-to-toggle {
+  display: flex;
+  justify-content: space-between;
+
+  .set-special-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-screen) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-screen) {}
+}
+
+.from-to-toggle__range {
+  margin: 12px 0 0 0;
+
+  @media (min-width: @tablet-screen) {
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-screen) {}
+}
+
+.from-to-toggle__span {
+  width: 70px;
+  margin: 8px 0 0 0;
+
+  @media (min-width: @tablet-screen) {
+    margin: 0;
+    vertical-align: middle;
+  }
+
+  @media (min-width: @desktop-screen) {}
+}

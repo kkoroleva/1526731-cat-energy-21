@@ -3,12 +3,28 @@
 .socials {
   display: flex;
   flex-wrap: wrap;
+  padding: 0 20px;
+  @media (min-width: @tablet-screen) {
+    justify-content: space-between;
+    padding: 55px 30px 61px 30px;
+  }
+
+  @media (min-width: @desktop-screen) {
+    padding: 55px 110px 58px 110px;
+  }
 }
 
 .socials__logo-link {
   flex-basis: 280px;
   padding: 39px 0 31px 0;
   text-align: center;
+  @media (min-width: @tablet-screen) {
+    flex-basis: 128px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-screen) {
+  }
 }
 
 .logo-text__image:hover {
@@ -21,24 +37,35 @@
 
 .socials__wrapper {
   flex-basis: 280px;
-  box-sizing: border-box;
   padding: 21px 0;
   border-top: 1px solid @divider;
   border-bottom: 1px solid @divider;
+  @media (min-width: @tablet-screen) {
+    padding: 0;
+    border: none;
+  }
 }
 
 .socials__list {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+
   width: 130px;
   height: 22px;
-  .list-reset;
-  margin: 0 auto;
+  list-style-type: none;
+  @media (min-width: @tablet-screen) {
+    height: 33px;
+  }
+}
+
+.socials__item {
+  margin: auto 0;
 }
 
 .socials__link {
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
 }
 
 .socials__link:focus {
@@ -46,24 +73,45 @@
 }
 
 .socials__link--vk {
-  display: inline-block;
   width: 23px;
   height: 16px;
   background: url("../img/socials__link--vk.svg") no-repeat;
+  @media (min-width: @tablet-screen) {
+    width: 30px;
+    height: 22px;
+    background: url("../img/socials__link--vk-tablet.svg") no-repeat;
+  }
+
 }
 
 .socials__link--ig {
   width: 16px;
   height: 16px;
   background: url("../img/socials__link--ig.svg") no-repeat;
+  @media (min-width: @tablet-screen) {
+    width: 23px;
+    height: 23px;
+    background: url("../img/socials__link--ig-tablet.svg") no-repeat;
+  }
 }
 
 .socials__link--fb {
   width: 22px;
   height: 22px;
   background: url("../img/socials__link--fb.svg") no-repeat;
+  @media (min-width: @tablet-screen) {
+    width: 28px;
+    height: 33px;
+    background: url("../img/socials__link--fb-tablet.svg") no-repeat;
+  }
 }
 
 .socials__copyright {
   flex-basis: 280px;
+  @media (min-width: @tablet-screen) {
+    flex-basis: 163px;
+  }
+
+  @media (min-width: @desktop-screen) {
+  }
 }

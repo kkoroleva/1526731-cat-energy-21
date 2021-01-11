@@ -3,11 +3,16 @@
   justify-content: space-between;
   padding: 22px 0;
 
+  @media (min-width: @tablet-screen) {
+    padding: 0;
+  }
+
   &:focus {
     opacity: @link-text-pressed-opacity;
   }
 
   &__text {
+    margin: 0;
     padding: 6px 0 0 0;
     .set-basic-font;
     font-style: normal;
@@ -15,5 +20,12 @@
     font-size: 16px;
     line-height: 18px;
     color: @basic-text;
+    @media (min-width: @tablet-screen) {
+      padding: 6px 0 0 0;
+
+    }
+
+    @media (min-width: @desktop-screen) {
+    }
   }
 }
