@@ -30,7 +30,7 @@
 
     @media (min-width: @tablet-screen) {
       margin: 0 0 30px;
-      padding: 77px 0px 57px 52px;
+      padding: 77px 0 57px 52px;
     }
 
     @media (min-width: @desktop-screen) {
@@ -160,62 +160,64 @@
       }
     }
   }
-}
 
-.program-types__link {
-  position: relative;
-  margin: 0;
-  padding: 0;
+  &__link {
+    position: relative;
+    margin: 0;
+    padding: 0;
 
-  .link-normalize;
-  .set-special-font;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-  text-transform: uppercase;
+    .link-normalize;
+    .set-special-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
 
-  @media (min-width: @tablet-screen) {
-    font-size: 20px;
-    line-height: 30px;
+    @media (min-width: @tablet-screen) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 8px;
+      left: 100px;
+      width: 32px;
+      height: 10px;
+      background-image: url("../img/program-types__link.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+
+      @media (min-width: @tablet-screen) {
+        top: 10px;
+        left: 133px;
+      }
+
+      @media (min-width: @tablet-screen) {
+        left: 136px;
+      }
+    }
+
+    &:hover::after {
+      left: 104px;
+      background-image: url("../img/program-types__link--hover.svg");
+
+      @media (min-width: @tablet-screen) {
+        top: 10px;
+        left: 137px;
+      }
+
+      @media (min-width: @tablet-screen) {
+        left: 140px;
+      }
+    }
+
+    &:focus,
+    &:focus::after {
+      opacity: @link-text-pressed-opacity;
+    }
   }
-}
-
-.program-types__link::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 8px;
-  left: 100px;
-  width: 32px;
-  height: 10px;
-  background-image: url("../img/program-types__link.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-
-  @media (min-width: @tablet-screen) {
-    top: 10px;
-    left: 133px;
-  }
-  @media (min-width: @tablet-screen) {
-    left: 136px;
-  }
-}
-
-.program-types__link:hover::after {
-  left: 104px;
-  background-image: url("../img/program-types__link--hover.svg");
-
-  @media (min-width: @tablet-screen) {
-    top: 10px;
-    left: 137px;
-  }
-  @media (min-width: @tablet-screen) {
-    left: 140px;
-  }
-}
-
-.program-types__link:focus,
-.program-types__link:focus::after {
-  opacity: @link-text-pressed-opacity;
 }

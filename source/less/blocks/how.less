@@ -66,6 +66,10 @@
       margin: 0;
     }
 
+    &:last-of-type {
+      margin: 0;
+    }
+
     &::before {
       content: "";
       display: block;
@@ -77,11 +81,10 @@
 
       @media (min-width: @tablet-screen) {
         top: 40px;
-        left: 0px;
+        left: 0;
         width: 80px;
         height: 80px;
       }
-
     }
 
     &--benefit {
@@ -92,11 +95,11 @@
 
       &::before {
         background-image: url("../img/how__item--benefit.svg");
+
         @media (min-width: @tablet-screen) {
-        background-image: url("../img/how__item--benefit-tablet.svg");
+          background-image: url("../img/how__item--benefit-tablet.svg");
         }
       }
-
     }
 
     &--powder {
@@ -107,8 +110,9 @@
 
       &::before {
         background-image: url("../img/how__item--powder.svg");
+
         @media (min-width: @tablet-screen) {
-        background-image: url("../img/how__item--powder-tablet.svg");
+          background-image: url("../img/how__item--powder-tablet.svg");
         }
       }
     }
@@ -121,8 +125,9 @@
 
       &::before {
         background-image: url("../img/how__item--by-step.svg");
+
         @media (min-width: @tablet-screen) {
-        background-image: url("../img/how__item--by-step-tablet.svg");
+          background-image: url("../img/how__item--by-step-tablet.svg");
         }
       }
     }
@@ -135,18 +140,11 @@
 
       &::before {
         background-image: url("../img/how__item--result.svg");
+
         @media (min-width: @tablet-screen) {
-        background-image: url("../img/how__item--result-tablet.svg");
+          background-image: url("../img/how__item--result-tablet.svg");
         }
       }
     }
   }
-}
-
-
-
-
-
-.how__item:last-of-type {
-  margin: 0;
 }
