@@ -1,3 +1,8 @@
+/*Screen size*/
+@mobile-screen: 320px;
+@tablet-screen: 768px;
+@desktop-screen: 1440px;
+
 /*background colours*/
 
 @basic-grey: #F2F2F2;
@@ -26,6 +31,8 @@
 @divider-3: #E6E6E6;
 @footer-socials: #666666;
 @show-more-plus: #D3D3D3;
+@range-tablet: #DCDCDC;
+@thumb-tablet-shadow: rgba(0, 0, 0, 0.16);
 
 @logo-hover_opacity: 0.8;
 @logo-pressed-opacity: 0.6;
@@ -35,20 +42,3 @@
 
 @basic-font: "Arial";
 @special-font: "Oswald";
-
-/*Mixins*/
-
-.list-normalize {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.link-normalize {
-  text-decoration: none;
-  color: @basic-black;
-}
-
-.set-special-font {
-  font-family: @special-font, @basic-font, sans-serif;
-}

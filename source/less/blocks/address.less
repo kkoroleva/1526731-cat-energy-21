@@ -1,0 +1,87 @@
+.address {
+  position: relative;
+  padding: 0;
+  background-color: @basic-grey;
+
+  &__directions-wrapper {
+    display: flex;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    padding: 28px 20px 26px 20px;
+    background-color: @basic-white;
+
+    @media (min-width: @tablet-screen) {
+      padding: 66px 72px 51px 71px;
+      width: 100%;
+    }
+
+    @media (min-width: @desktop-screen) {
+      top: 95px;
+      left: 110px;
+      width: 570px;
+      padding: 66px 89px 51px 76px;
+    }
+  }
+
+  &__slogan {
+    width: 140px;
+    .set-special-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: @basic-text-darker;
+
+    @media (min-width: @tablet-screen) {
+      font-size: 20px;
+      line-height: 21px;
+    }
+  }
+
+  &__directions {
+    width: 140px;
+    .set-basic-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: @basic-text;
+
+    @media (min-width: @tablet-screen) {
+      width: auto;
+      font-size: 16px;
+      text-align: right;
+    }
+
+    @media (min-width: @desktop-screen) {
+      text-align: left;
+    }
+
+    & br {
+      display: none;
+
+      @media (min-width: @tablet-screen) {
+        display: inline;
+      }
+    }
+  }
+
+  &__map {
+
+    padding: 114px 0 0 0;
+    width: 100%;
+
+    @media (min-width: @tablet-screen) {
+      padding: 201px 0 0 0;
+      height: 400px;
+    }
+
+    @media (min-width: @desktop-screen) {
+      padding: 0;
+    }
+  }
+}

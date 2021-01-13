@@ -1,0 +1,38 @@
+.range {
+  content: "";
+  position: relative;
+  width: 84px;
+  height: 14px;
+  border: 1px solid @divider-2;
+  border-radius: 6px;
+  background-color: @basic-white;
+
+  @media (min-width: @tablet-screen) {
+    margin-top: 15px;
+    width: 428px;
+    height: 6px;
+    border: none;
+    background-color: @range-tablet;
+  }
+}
+
+.range__thumb {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  width: 35px;
+  height: 6px;
+  background: @basic-green;
+  border-radius: 6px;
+
+  @media (min-width: @tablet-screen) {
+    top: -14px;
+    left: 197px;
+    width: 34px;
+    height: 34px;
+    border: 13px solid @basic-white;
+    border-radius: 50%;
+    filter: drop-shadow(0 1px 3px @thumb-tablet-shadow);
+  }
+}
