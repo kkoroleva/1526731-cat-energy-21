@@ -1,45 +1,43 @@
-.page {
-  &__body {
-    min-width: @mobile-screen;
+.page__body {
+  min-width: @mobile-screen;
+}
+
+.page__header {
+  width: @mobile-screen;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-screen) {
+    width: @tablet-screen;
   }
 
-  &__header {
-    width: @mobile-screen;
-    margin: 0 auto;
+  @media (min-width: @desktop-screen) {
+    width: @desktop-screen;
+  }
+}
 
-    @media (min-width: @tablet-screen) {
-      width: @tablet-screen;
-    }
+.page__main {
+  width: @mobile-screen;
+  margin: 0 auto;
 
-    @media (min-width: @desktop-screen) {
-      width: @desktop-screen;
-    }
+  @media (min-width: @tablet-screen) {
+    width: @tablet-screen;
   }
 
-  &__main {
-    width: @mobile-screen;
-    margin: 0 auto;
+  @media (min-width: @desktop-screen) {
+    width: @desktop-screen;
+  }
+}
 
-    @media (min-width: @tablet-screen) {
-      width: @tablet-screen;
-    }
+.page__footer {
+  width: 320px;
+  margin: 0 auto;
+  background-color: @basic-grey;
 
-    @media (min-width: @desktop-screen) {
-      width: @desktop-screen;
-    }
+  @media (min-width: @tablet-screen) {
+    width: @tablet-screen;
   }
 
-  &__footer {
-    width: 320px;
-    margin: 0 auto;
-    background-color: @basic-grey;
-
-    @media (min-width: @tablet-screen) {
-      width: @tablet-screen;
-    }
-
-    @media (min-width: @desktop-screen) {
-      width: @desktop-screen;
-    }
+  @media (min-width: @desktop-screen) {
+    width: @desktop-screen;
   }
 }

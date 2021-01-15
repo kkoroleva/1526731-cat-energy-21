@@ -10,19 +10,19 @@
   &:focus {
     opacity: @link-text-pressed-opacity;
   }
+}
 
-  &__text {
-    margin: 0;
+.copyright__text {
+  margin: 0;
+  padding: 6px 0 0 0;
+  .set-basic-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: @basic-text;
+
+  @media (min-width: @tablet-screen) {
     padding: 6px 0 0 0;
-    .set-basic-font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
-    color: @basic-text;
-
-    @media (min-width: @tablet-screen) {
-      padding: 6px 0 0 0;
-    }
   }
 }
