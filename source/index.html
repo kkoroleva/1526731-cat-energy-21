@@ -59,7 +59,13 @@
       <p class="promo__text promo__text--dark">
         Занялся собой? Займись котом!
       </p>
-      <img class="promo__image" src="img/promo-can.png" alt="Пример продукта компании" />
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/promo-can-desktop.png 1х, img/promo-can-desktop@2x.png 2х">
+        <source media="(min-width: 768px)" srcset="img/promo-can-tablet.png 1х, img/promo-can-tablet@2x.png 2х">
+        <img class="promo__image" src="img/promo-can-mobile.png" srcset="img/promo-can-mobile@2x.png 2х" width="280"
+          height="270" alt="Пример продукта компании" />
+      </picture>
+
       <a href="form.html" class="promo__button">
         Подобрать программу
       </a>
@@ -161,7 +167,7 @@
     <div class="socials">
       <a class="socials__logo-link logo-text">
         <img src="img/text-logo.svg" width="128" height="24"
-        alt="Логотип магазина функционального питания для котов «‎:Кэт Энерджи»‎:">
+          alt="Логотип магазина функционального питания для котов «‎:Кэт Энерджи»‎:">
       </a>
       <div class="socials__wrapper">
         <ul class="socials__list">
