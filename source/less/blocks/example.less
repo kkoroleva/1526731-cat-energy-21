@@ -1,10 +1,10 @@
 .example {
-  padding: 27px 20px 36px 20px;
+  padding: 27px 0 36px;
   background-color: @basic-grey-example;
 
   @media (min-width: @tablet-screen) {
     padding: 43px 30px 0 30px;
-    background-color: @basic-white;
+    background-image: linear-gradient(@basic-white 619px, @basic-grey-example 619px);
   }
 
   @media (min-width: @desktop-screen) {
@@ -17,8 +17,9 @@
 }
 
 .example__headline {
-  margin: 0 0 33px 0;
-
+  margin: 0 auto 33px auto;
+  padding: 0 20px;
+  width: @mobile-screen;
   .set-special-font;
   font-style: normal;
   font-weight: 400;
@@ -26,7 +27,9 @@
   line-height: 40px;
 
   @media (min-width: @tablet-screen) {
-    margin: 0 0 63px 0;
+    margin: 0 auto 63px auto;
+    padding: 0 0 0 30px;
+    width: @tablet-screen;
     font-size: 60px;
     line-height: 60px;
   }
@@ -40,7 +43,13 @@
 }
 
 .example__wrapper {
+  margin: 0 auto;
+  width: @mobile-screen;
+  padding: 0 20px;
+
   @media (min-width: @tablet-screen) {
+    width: @tablet-screen - 60px;
+    padding: 0;
     padding-bottom: 224px;
   }
 
@@ -143,7 +152,9 @@
 
 .example__from-to-wrapper {
   position: relative;
-  width: 280px;
+  margin: 0 auto;
+  width: @mobile-screen;
+
 
   @media (min-width: @tablet-screen) {
     width: 708px;
@@ -162,13 +173,21 @@
   @media (min-width: @tablet-screen) {
     top: -191px;
     width: 708px;
-    height: 549px;
-    /*для тестов*/
+    height: 620px;
+
+  }
+}
+
+.example__image--to {
+  left: 37px;
+
+  @media (min-width: @tablet-screen) {
+    display: none;
   }
 }
 
 .example__from-to-toggle {
-  padding: 255px 25px 0 27px;
+  padding: 255px 45px 0 47px;
 
   @media (min-width: @tablet-screen) {
     padding: 362px 60px 69px 57px;

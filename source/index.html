@@ -12,63 +12,65 @@
 
 <body class="page__body main-page">
   <header class="page__header page-header">
-    <a class="page-header__logo">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="img/cat-logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/cat-logo-tablet.svg">
-        <img src="img/cat-logo-mobile.svg" width="34" height="38"
-          alt="Функциональное питание для котов «‎:Кэт Энерджи»‎:">
-      </picture>
-    </a>
-    <a class="page-header__logo-mobile logo-mobile">
-      <img src="img/text-logo.svg" width="101" height="18"
-        alt="Логотип магазина функционального питания для котов «‎:Кэт Энерджи»‎:">
-    </a>
-    <button class="page-header__nav-toggle nav-toggle nav-toggle--close" type="button" aria-valuetext="Открыть меню">
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 -0.727046 0.686589 0.727046 2.00171 20)"
-          stroke="black" stroke-width="1.5" />
-        <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 0.727046 -0.686589 0.727046 1 2)"
-          stroke="black" stroke-width="1.5" />
-      </svg>
-    </button>
-    <ul class="page-header__main-nav main-nav">
-      <li class="main-nav__item main-nav__item--active">
-        <a class="main-nav__link">
-          Главная
-        </a>
-      </li>
-      <li class="main-nav__item">
-        <a href="catalog.html" class="main-nav__link">
-          Каталог продукции
-        </a>
-      </li>
-      <li class="main-nav__item">
-        <a href="form.html" class="main-nav__link">
-          Подбор программы
-        </a>
-      </li>
-    </ul>
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/cat-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/cat-logo-tablet.svg">
+          <img src="img/cat-logo-mobile.svg" width="34" height="38"
+            alt="Функциональное питание для котов «‎:Кэт Энерджи»‎:">
+        </picture>
+      </a>
+      <a class="page-header__logo-mobile logo-mobile">
+        <img src="img/text-logo.svg" width="101" height="18"
+          alt="Логотип магазина функционального питания для котов «‎:Кэт Энерджи»‎:">
+      </a>
+      <button class="page-header__nav-toggle nav-toggle nav-toggle--close" type="button" aria-valuetext="Открыть меню">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 -0.727046 0.686589 0.727046 2.00171 20)"
+            stroke="black" stroke-width="1.5" />
+          <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 0.727046 -0.686589 0.727046 1 2)"
+            stroke="black" stroke-width="1.5" />
+        </svg>
+      </button>
+      <ul class="page-header__main-nav main-nav">
+        <li class="main-nav__item main-nav__item--active">
+          <a class="main-nav__link">
+            Главная
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="catalog.html" class="main-nav__link">
+            Каталог продукции
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="form.html" class="main-nav__link">
+            Подбор программы
+          </a>
+        </li>
+      </ul>
+    </div>
   </header>
 
   <main class="page__main">
     <h1 class="visually-hidden">"Кэт Энерджи" - функциональное питание для котов</h1>
     <section class="promo">
-      <div class="promo__special-background"></div>
-      <h2 class="promo__headline promo__headline--dark">Функциональное питание&nbsp;для&nbsp;котов</h2>
-      <p class="promo__text promo__text--dark">
-        Занялся собой? Займись котом!
-      </p>
-      <picture>
-        <source media="(min-width: 1440px)" srcset="img/promo-can-desktop.png 1х, img/promo-can-desktop@2x.png 2х">
-        <source media="(min-width: 768px)" srcset="img/promo-can-tablet.png 1х, img/promo-can-tablet@2x.png 2х">
-        <img class="promo__image" src="img/promo-can-mobile.png" srcset="img/promo-can-mobile@2x.png 2х" width="280"
-          height="270" alt="Пример продукта компании" />
-      </picture>
-
-      <a href="form.html" class="promo__button">
-        Подобрать программу
-      </a>
+      <div class="promo__wrapper">
+        <h2 class="promo__headline promo__headline--dark">Функциональное питание&nbsp;для&nbsp;котов</h2>
+        <p class="promo__text promo__text--dark">
+          Занялся собой? Займись котом!
+        </p>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/promo-can-desktop.png">
+          <source media="(min-width: 768px)" srcset="img/promo-can-tablet.png">
+          <img class="promo__image" src="img/promo-can-mobile.png" width="280" height="270"
+            alt="Пример продукта компании" />
+        </picture>
+        <a href="form.html" class="promo__button">
+          Подобрать программу
+        </a>
+      </div>
     </section>
     <section class="program-types">
       <h2 class="visually-hidden">Виды программ питания</h2>
@@ -138,10 +140,15 @@
         </div>
       </div>
       <div class="example__from-to-wrapper">
-        <img class="example__image example__image--from" src="img/example__image--from.png" width="311" height="232"
-          alt="Борис ДО" />
-        <img class="example__image example__image--to" src="img/example__image--to.png" width="251" height="240"
-          alt="Борис ПОСЛЕ" />
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/example-half-desktop.png" alt="Живой пример">
+          <source media="(min-width: 768px)" srcset="img/example-half-tablet.png" alt="Живой пример">
+          <img class="example__image example__image--from" src="img/example-before-mobile.png" width="311" height="232"
+            alt="Борис ДО" />
+        </picture>
+        <img class="example__image example__image--to visually-hidden" src="img/example-after-mobile.png" width="251"
+          height="240" alt="Борис ПОСЛЕ" />
+
         <div class="example__from-to-toggle from-to-toggle">
           <span class="from-to-toggle__span from-to-toggle__span--from">БЫЛО</span>
           <div class="from-to-toggle__range range">
@@ -154,22 +161,26 @@
     </section>
     <section class="address">
       <div class="address__directions-wrapper">
-        <b class="address__slogan">приглашаем к&nbsp;сотрудничеству дилеров!</b>
+        <b class="address__slogan"><span>приглашаем</span> к&nbsp;сотрудничеству дилеров!</b>
         <address class="address__directions">
           ул. Большая Конюшенная,&nbsp;д. 19/8 <span>Санкт-Петербург</span>
         </address>
       </div>
-      <img class="address__map" src="img/page-footer__address.jpg" width="320" alt="Карта местоположения" />
+      <iframe class="address__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858715723435!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1610809096697!5m2!1sru!2sru"
+        width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
     </section>
   </main>
 
   <footer class="page__footer page-footer">
-    <div class="socials">
-      <a class="socials__logo-link logo-text">
+    <h2 class="visually-hidden">Контактная информация</h2>
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo-link logo-text">
         <img src="img/text-logo.svg" width="128" height="24"
           alt="Логотип магазина функционального питания для котов «‎:Кэт Энерджи»‎:">
       </a>
-      <div class="socials__wrapper">
+      <div class="page-footer__socials socials">
         <ul class="socials__list">
           <li class="socials__item">
             <a href="#" class="socials__link socials__link--vk">
@@ -188,7 +199,7 @@
           </li>
         </ul>
       </div>
-      <a class="socials__copyright copyright" href="https://htmlacademy.ru/">
+      <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/">
         <p class="copyright__text">HTML Academy</p>
         <img class="copyright__logo" src="img/logo-html-academy.svg" alt="HTML Academy" />
       </a>

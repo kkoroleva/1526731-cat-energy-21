@@ -1,25 +1,23 @@
 .address {
   position: relative;
   padding: 0;
-  background-color: @basic-grey;
 }
 
 .address__directions-wrapper {
   display: flex;
-
-  position: absolute;
-  top: 0;
-  left: 0;
   justify-content: space-between;
+  margin: 0 auto;
   padding: 28px 20px 26px 20px;
+  width: @mobile-screen;
   background-color: @basic-white;
 
   @media (min-width: @tablet-screen) {
     padding: 64px 72px 58px 71px;
-    width: 100%;
+    width: @tablet-screen;
   }
 
   @media (min-width: @desktop-screen) {
+    position: absolute;
     top: 95px;
     left: 110px;
     width: 570px;
@@ -28,7 +26,6 @@
 }
 
 .address__slogan {
-  padding-top: 4px;
   width: 140px;
   .set-special-font;
   font-style: normal;
@@ -40,7 +37,15 @@
 
   @media (min-width: @tablet-screen) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 26px;
+  }
+}
+
+.address__slogan span {
+  display: block;
+  padding-bottom: 4px;
+  @media (min-width: @tablet-screen) {
+    padding: 0;
   }
 }
 
@@ -66,20 +71,17 @@
 
 .address__directions span {
   display: block;
-  padding-top: 20px;
+
+  @media (min-width: @tablet-screen) {
+    padding-top: 20px;
+  }
 }
 
 .address__map {
-
-  padding: 114px 0 0 0;
   width: 100%;
+  background-image: url("../../img/map-back-mobile.jpg");
 
   @media (min-width: @tablet-screen) {
-    padding: 201px 0 0 0;
-    height: 601px;
-  }
-
-  @media (min-width: @desktop-screen) {
-    padding: 0;
+    height: 400px;
   }
 }
