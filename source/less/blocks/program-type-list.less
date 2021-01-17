@@ -1,0 +1,41 @@
+.program-type-list {
+  .list-reset;
+  padding: 23px 0 25px 0;
+  border-top: 1px solid @divider;
+  border-bottom: 1px solid @divider;
+
+  @media (min-width: @tablet-screen) {
+    padding: 25px 28px 30px 28px;
+    width: 628px;
+    border: 1px solid @form-field-border;
+  }
+
+  @media (min-width: @desktop-screen) {
+    width: 528px;
+  }
+}
+
+.program-type-list__label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  //background-image: url("../img/icons/radio-off.svg");
+  background-size: 25px 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.program-type-list__label:checked+.radiobutton-label::before {
+  width: 25px;
+  height: 25px;
+  top: 0px;
+  left: 0px;
+  background-image: url("../img/icons/radio-on.svg");
+  background-size: 25px 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
