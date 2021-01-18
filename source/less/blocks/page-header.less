@@ -14,6 +14,7 @@
       height: 696px;
       background: url("../img/promo-background-desktop.jpg") no-repeat @mixed-green-promo-desktop;
       z-index: -1;
+
       @media (min-resolution: 2dppx) {
         background: url("../img/promo-background-desktop@2x.jpg") no-repeat;
       }
@@ -47,9 +48,11 @@
 
   @media (min-width: @tablet-screen) {
     padding: 0;
+
     &:hover {
       opacity: @logo-hover_opacity;
     }
+
     &:focus {
       opacity: @logo-pressed-opacity;
     }
@@ -73,9 +76,11 @@
 
   @media (min-width: @tablet-screen) {
     display: none;
+
     &:hover {
       opacity: @logo-hover_opacity;
     }
+
     &:focus {
       opacity: @logo-pressed-opacity;
     }
