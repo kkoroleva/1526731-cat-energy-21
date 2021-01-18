@@ -25,11 +25,19 @@
 }
 
 .from-to-toggle__span {
-  width: 70px;
   margin: 8px 0 0 0;
 
   @media (min-width: @tablet-screen) {
     margin: 0;
     vertical-align: middle;
+    border-bottom: 1px dotted @from-to-toggle-border;
+
+    &:hover {
+      border-bottom: 1px solid @from-to-toggle-border;
+    }
+
+    &:focus{
+      border-bottom: none;
+    }
   }
 }

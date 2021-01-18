@@ -1,6 +1,8 @@
 .page-header {
   position: relative;
+}
 
+.page-header--main {
   &::after {
     @media (min-width: @desktop-screen) {
       content: "";
@@ -8,13 +10,17 @@
       position: absolute;
       top: 0;
       right: 0;
-      width: 1044px;
+      width: 50vw;
       height: 696px;
-      background: url("../../img/promo-background-desktop.jpg") no-repeat;
+      background: url("../img/promo-background-desktop.jpg") no-repeat @mixed-green-promo-desktop;
       z-index: -1;
+      @media (min-resolution: 2dppx) {
+        background: url("../img/promo-background-desktop@2x.jpg") no-repeat;
+      }
     }
   }
 }
+
 
 .page-header__wrapper {
   display: flex;
@@ -41,6 +47,12 @@
 
   @media (min-width: @tablet-screen) {
     padding: 0;
+    &:hover {
+      opacity: @logo-hover_opacity;
+    }
+    &:focus {
+      opacity: @logo-pressed-opacity;
+    }
   }
 }
 
@@ -61,6 +73,12 @@
 
   @media (min-width: @tablet-screen) {
     display: none;
+    &:hover {
+      opacity: @logo-hover_opacity;
+    }
+    &:focus {
+      opacity: @logo-pressed-opacity;
+    }
   }
 }
 
@@ -68,6 +86,7 @@
   padding: 0 23px 12px 0;
   border: none;
   background-color: @basic-white;
+  visibility: hidden;
 
   @media (min-width: @tablet-screen) {
     display: none;

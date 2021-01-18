@@ -11,10 +11,12 @@
   position: relative;
   width: 124px;
   background: url("../img/stats__item.svg") no-repeat;
+  background-size: 124px 56px;
 
   @media (min-width: @tablet-screen) {
     width: 162px;
-    background: url("../img/stats__item-tablet.svg") no-repeat;
+    background: url("../img/stats__item.svg") no-repeat;
+    background-size: 162px 72px;
   }
 }
 
@@ -48,6 +50,7 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
+
   color: @basic-text;
 
   @media (min-width: @tablet-screen) {
@@ -57,5 +60,9 @@
 
     font-size: 14px;
     line-height: 14px;
+    background-color: @basic-white;
+  }
+  @media (min-width: @tablet-screen) {
+    background-color: @basic-grey-example;
   }
 }

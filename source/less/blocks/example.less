@@ -8,11 +8,18 @@
   }
 
   @media (min-width: @desktop-screen) {
+    padding: 0;
+    background-image: linear-gradient(@basic-white 194px, @basic-grey-example 194px);
+  }
+}
+
+.example__positioner {
+  @media (min-width: @desktop-screen) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 0 25px 0;
-    background-color: @basic-grey-example;
+    margin: 0 auto;
+    width: @desktop-screen;
   }
 }
 
@@ -35,10 +42,9 @@
   }
 
   @media (min-width: @desktop-screen) {
-    margin: 0;
+    margin: 0 auto;
     padding: 58px 110px 76px;
-    flex-basis: 100%;
-    background-color: @basic-white;
+    width: @desktop-screen;
   }
 }
 
@@ -54,7 +60,7 @@
   }
 
   @media (min-width: @desktop-screen) {
-    padding: 66px 0 0 110px;
+    padding: 70px 0 0 65px;
     width: 546px;
   }
 }
