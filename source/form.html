@@ -61,77 +61,84 @@
         <p class="form__preword">
           Заполните анкету, и мы подберем программу&nbsp;питания для вашего кота
         </p>
-        <h3 class="form__headline visually-hidden">Общая информация о питомце</h3>
-        <ul class="form__general-information-list general-information-list">
-          <li class="general-information-list__item">
-            <label class="form__label general-information-list__label" for="enter-name">ИМЯ:*</label>
-            <input class="form__text-input" type="text" name="enter-name" id="enter-name" placeholder="Барсик" required>
-          </li>
-          <li class="general-information-list__item">
-            <label class="form__label general-information-list__label" for="enter-weight">Вес&nbsp;(кг):*</label>
-            <input class="form__text-input" type="number" name="enter-weight" id="enter-weight" placeholder="7" required>
-          </li>
-          <li class="general-information-list__item">
-            <label class="form__label general-information-list__label" for="enter-age">Возраст&nbsp;(лет):</label>
-            <input class="form__text-input" type="number" name="enter-age" id="enter-age" placeholder="7">
-          </li>
-        </ul>
+        <div class="form__general-and-program-positioner">
+          <h3 class="form__headline visually-hidden">Общая информация о питомце</h3>
+          <ul class="form__general-information-list general-information-list">
+            <li class="general-information-list__item">
+              <label class="form__label general-information-list__label" for="enter-name">ИМЯ:*</label>
+              <input class="form__text-input" type="text" name="enter-name" id="enter-name" placeholder="Барсик" autofocus>
+            </li>
+            <li class="general-information-list__item">
+              <label class="form__label general-information-list__label" for="enter-weight">Вес&nbsp;(кг):*</label>
+              <input class="form__text-input" type="number" name="enter-weight" id="enter-weight" placeholder="7">
+            </li>
+            <li class="general-information-list__item">
+              <label class="form__label general-information-list__label" for="enter-age">Возраст&nbsp;(лет):</label>
+              <input class="form__text-input" type="number" name="enter-age" id="enter-age" placeholder="7">
+            </li>
+          </ul>
 
-        <h3 class="form__headline visually-hidden">Выбрать тип программы</h3>
-        <ul class="form__program-type-list program-type-list">
-          <li class="program-type-list__item">
-            <input class="form__radiobutton" type="radio" name="radio-program-type" id="radio-slim" checked>
-            <label class="form__label program-type-list__label" for="radio-slim">Похудение</label>
-          </li>
-          <li class="program-type-list__item">
-            <input class="form__radiobutton" type="radio" name="radio-program-type" id="radio-gain">
-            <label class="form__label program-type-list__label" for="radio-gain">Набор массы</label>
-          </li>
-          <li class="program-type-list__item">
-            <input class="form__radiobutton" type="radio" name="radio-program-type" id="radio-help">
-            <label class="form__label program-type-list__label" for="radio-help">Не знаю (Нужен ваш совет)</label>
-          </li>
-        </ul>
+          <h3 class="form__headline visually-hidden">Выбрать тип программы</h3>
+          <ul class="form__program-type-list program-type-list">
+            <li class="program-type-list__item">
+              <input class="form__radiobutton program-type-list__radiobutton" type="radio" name="radio-program-type"
+                id="radio-slim" checked>
+              <label class="form__label program-type-list__label" for="radio-slim">Похудение</label>
+            </li>
+            <li class="program-type-list__item">
+              <input class="form__radiobutton program-type-list__radiobutton" type="radio" name="radio-program-type"
+                id="radio-gain">
+              <label class="form__label program-type-list__label" for="radio-gain">Набор массы</label>
+            </li>
+            <li class="program-type-list__item">
+              <input class="form__radiobutton program-type-list__radiobutton" type="radio" name="radio-program-type"
+                id="radio-help">
+              <label class="form__label program-type-list__label" for="radio-help">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </div>
       </div>
+      <div class="form__bottom-wrapper">
+        <h3 class="form__headline form__headline--contacts">Контактные данные (владельца&nbsp;кота)</h3>
+        <ul class="form__pet-owner-contacts-list pet-owner-contacts-list">
+          <li class="pet-owner-contacts-list__item">
+            <label class="form__label pet-owner-contacts-list__label" for="enter-mail">E&#8209;mail:*</label>
+            <input class="form__text-input pet-owner-contacts-list__text-input" type="text" name="enter-mail"
+              id="enter-mail" placeholder="kuklachev@gmail.com">
+          </li>
+          <li class="pet-owner-contacts-list__item">
+            <label class="form__label pet-owner-contacts-list__label" for="enter-tel">Телефон:*</label>
+            <input class="form__text-input pet-owner-contacts-list__text-input" type="text" name="enter-tel"
+              id="enter-tel" placeholder="8 (960) 900-60-90">
+          </li>
+        </ul>
 
-      <h3 class="form__headline">Контактные данные (владельца кота)</h3>
-      <ul class="form__pet-owner-contacts-list pet-owner-contacts-list">
-        <li class="pet-owner-contacts-list__item">
-          <label class="form__label" for="enter-mail">E-mail:*</label>
-          <input class="form__text-input" type="text" name="enter-mail" id="enter-mail"
-            placeholder="kuklachev@gmail.com" required>
-        </li>
-        <li class="pet-owner-contacts-list__item">
-          <label class="form__label" for="enter-tel">Телефон:*</label>
-          <input class="form__text-input" type="text" name="enter-tel" id="enter-tel" placeholder="8 (960) 900-60-90" required>
-        </li>
-      </ul>
+        <h3 class="form__headline form__headline--comment">Комментарий</h3>
+        <textarea class="form__comment" placeholder="Расскажите обо всех повАдках кота"></textarea>
 
-      <h3 class="form__headline">Комментарий</h3>
-      <textarea class="form__comment" placeholder="Расскажите обо всех повАдках кота"></textarea>
+        <h3 class="form__headline form__headline--additional">Дополнительно</h3>
+        <ul class="form__additional-list additional-list">
+          <li class="additional-list__item">
+            <input class="form__checkbox additional-list__checkbox" type="checkbox" name="check-sugar" id="check-sugar" checked>
+            <label class="form__label additional-list__label" for="check-sugar">сахарозаменитель</label>
+          </li>
+          <li class="additional-list__item">
+            <input class="form__checkbox additional-list__checkbox" type="checkbox" name="check-water" id="check-water">
+            <label class="form__label additional-list__label" for="check-water">питьевая вода</label>
+          </li>
+          <li class="additional-list__item">
+            <input class="form__checkbox additional-list__checkbox" type="checkbox" name="check-milk" id="check-milk">
+            <label class="form__label additional-list__label" for="check-milk">молоко</label>
+          </li>
+          <li class="additional-list__item">
+            <input class="form__checkbox additional-list__checkbox" type="checkbox" name="check-vitamins" id="check-vitamins">
+            <label class="form__label additional-list__label" for="check-vitamins">витамины</label>
+          </li>
+        </ul>
 
-      <h3 class="form__headline">Дополнительно</h3>
-      <ul class="form__additional-list additional-list">
-        <li class="additional-list__item">
-          <input class="form__checkbox" type="checkbox" name="check-sugar" id="check-sugar" checked>
-          <label class="form__label additional-list__label" for="check-sugar">сахарозаменитель</label>
-        </li>
-        <li class="additional-list__item">
-          <input class="form__checkbox" type="checkbox" name="check-water" id="check-water">
-          <label class="form__label additional-list__label" for="check-water">питьевая вода</label>
-        </li>
-        <li class="additional-list__item">
-          <input class="form__checkbox" type="checkbox" name="check-milk" id="check-milk">
-          <label class="form__label additional-list__label" for="check-milk">молоко</label>
-        </li>
-        <li class="additional-list__item">
-          <input class="form__checkbox" type="checkbox" name="check-vitamins" id="check-vitamins">
-          <label class="form__label additional-list__label" for="check-vitamins">витамины</label>
-        </li>
-      </ul>
-
-      <button class="button form__button" type="submit">отправить заявку</button>
-      <legend class="form__legend">* — Обязательные поля</legend>
+        <button class="button form__button button--green" type="submit">отправить заявку</button>
+        <p class="form__legend">* — Обязательные поля</p>
+      </div>
     </form>
 
     <section class="address">

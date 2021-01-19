@@ -45,7 +45,7 @@
 
   @media (min-width: @desktop-screen) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 96px;
+    grid-column-gap: 77px;
     padding: 0;
   }
 }
@@ -85,10 +85,12 @@
     left: -80px;
     width: 60px;
     height: 60px;
+    //background-size: 60px 60px;
+    background-position: center;
 
     @media (min-width: @tablet-screen) {
       top: 40px;
-      left: 0;
+      left: 2px;
       width: 80px;
       height: 80px;
       background-size: 80px 80px;
@@ -123,6 +125,10 @@
       background: url("../img/how-by-step-back.svg") no-repeat 124px 38px;
     }
 
+    @media (min-width: @desktop-screen) {
+      padding-left: 2px;
+    }
+
     &::before {
       background-image: url("../img/how-by-step.svg");
     }
@@ -132,6 +138,10 @@
     @media (min-width: @tablet-screen) {
       width: 249px;
       background: url("../img/how-result-back.svg") no-repeat 125px 40px;
+    }
+
+    @media (min-width: @desktop-screen) {
+      padding-left: 3px;
     }
 
     &::before {
