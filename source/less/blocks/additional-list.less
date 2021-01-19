@@ -61,17 +61,17 @@
   }
 }
 
-.additional-list__checkbox:checked+.additional-list__label::before {
-  background-image: url(../img/checkbox-tick.svg);
+.additional-list__checkbox:checked + .additional-list__label::before {
+  background-image: url("../img/checkbox-tick.svg");
   background-size: 26px 26px;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.additional-list__checkbox:disabled+.additional-list__label {
+.additional-list__checkbox:disabled + .additional-list__label {
   opacity: 0.3;
 }
 
-.additional-list__checkbox:hover:not(:disabled)+.additional-list__label::before {
+.additional-list__checkbox:hover:not(:disabled) + .additional-list__label::before {
   box-shadow: 0 0 0 1px @form-special-hover;
 }

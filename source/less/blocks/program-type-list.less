@@ -46,15 +46,15 @@
   }
 }
 
-.program-type-list__radiobutton:checked+.program-type-list__label::before {
+.program-type-list__radiobutton:checked + .program-type-list__label::before {
   border: 8px solid @basic-white;
   background-color: @basic-green;
 }
 
-.program-type-list__radiobutton:disabled+.program-type-list__label {
+.program-type-list__radiobutton:disabled + .program-type-list__label {
   opacity: 0.3;
 }
 
-.program-type-list__radiobutton:hover:not(:disabled)+.program-type-list__label::before {
+.program-type-list__radiobutton:hover:not(:disabled) + .program-type-list__label::before {
   box-shadow: 0 0 0 1px @form-special-hover;
 }
