@@ -11,7 +11,7 @@
 </head>
 
 <body class="page__body main-page">
-  <header class="page__header page-header">
+  <header class="page__header page-header page-header--main">
     <div class="page-header__wrapper">
       <a class="page-header__logo">
         <picture>
@@ -34,18 +34,18 @@
         </svg>
       </button>
       <ul class="page-header__main-nav main-nav">
-        <li class="main-nav__item main-nav__item--active">
-          <a class="main-nav__link">
+        <li class="main-nav__item main-nav__item--active-main">
+          <a class="main-nav__link main-nav__link--white">
             Главная
           </a>
         </li>
         <li class="main-nav__item">
-          <a href="catalog.html" class="main-nav__link">
+          <a href="catalog.html" class="main-nav__link main-nav__link--white">
             Каталог продукции
           </a>
         </li>
         <li class="main-nav__item">
-          <a href="form.html" class="main-nav__link">
+          <a href="form.html" class="main-nav__link main-nav__link--white">
             Подбор программы
           </a>
         </li>
@@ -62,12 +62,12 @@
           Занялся собой? Займись котом!
         </p>
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/promo-can-desktop.png">
-          <source media="(min-width: 768px)" srcset="img/promo-can-tablet.png">
-          <img class="promo__image" src="img/promo-can-mobile.png" width="280" height="270"
-            alt="Пример продукта компании" />
+          <source media="(min-width: 1440px)" srcset="img/promo-can-desktop.png 1x, img/promo-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/promo-can-tablet.png 1x, img/promo-can-desktop@2x.png 2x">
+          <img class="promo__image" src="img/promo-can-mobile.png" srcset="img/promo-can-mobile@2x.png 2x" width="280"
+            height="270" alt="Пример продукта компании" />
         </picture>
-        <a href="form.html" class="promo__button">
+        <a href="form.html" class="promo__button button button--green">
           Подобрать программу
         </a>
       </div>
@@ -115,51 +115,55 @@
       </ul>
     </section>
     <section class="example">
-      <h2 class="example__headline">Живой пример</h2>
-      <div class="example__wrapper">
-        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по&#8209;прежнему
-          спит по
-          16 часов в день.
-        </p>
-        <div class="example__stats-wrapper">
-          <ul class="example__stats-list stats">
-            <li class="stats__item">
-              <p class="stats__label">5 КГ</p>
-              <p class="stats__description">снижение веса</p>
-            </li>
-            <li class="stats__item">
-              <p class="stats__label">60 ДНЕЙ</p>
-              <p class="stats__description">затрачено времени</p>
-            </li>
-          </ul>
-          <b class="example__price">
-            <span class="example__price-label">Затраты на питание: </span>
-            <span class="example__price-amount">15 000 РУБ.</span>
-          </b>
-        </div>
-      </div>
-      <div class="example__from-to-wrapper">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/example-half-desktop.png" alt="Живой пример">
-          <source media="(min-width: 768px)" srcset="img/example-half-tablet.png" alt="Живой пример">
-          <img class="example__image example__image--from" src="img/example-before-mobile.png" width="311" height="232"
-            alt="Борис ДО" />
-        </picture>
-        <img class="example__image example__image--to visually-hidden" src="img/example-after-mobile.png" width="251"
-          height="240" alt="Борис ПОСЛЕ" />
-
-        <div class="example__from-to-toggle from-to-toggle">
-          <span class="from-to-toggle__span from-to-toggle__span--from">БЫЛО</span>
-          <div class="from-to-toggle__range range">
-            <div class="range__thumb">
-            </div>
+      <div class="example__positioner">
+        <h2 class="example__headline">Живой пример</h2>
+        <div class="example__wrapper">
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+            Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по&#8209;прежнему
+            спит по
+            16 часов в день.
+          </p>
+          <div class="example__stats-wrapper">
+            <ul class="example__stats-list stats">
+              <li class="stats__item">
+                <p class="stats__label">5 КГ</p>
+                <p class="stats__description">снижение веса</p>
+              </li>
+              <li class="stats__item">
+                <p class="stats__label">60 ДНЕЙ</p>
+                <p class="stats__description">затрачено времени</p>
+              </li>
+            </ul>
+            <b class="example__price">
+              <span class="example__price-label">Затраты на питание: </span>
+              <span class="example__price-amount">15 000 РУБ.</span>
+            </b>
           </div>
-          <span class="from-to-toggle__span from-to-toggle__span--to">СТАЛО</span>
+        </div>
+        <div class="example__from-to-wrapper">
+          <picture>
+            <source media="(min-width: 1440px)"
+              srcset="img/example-half-desktop.png 1x, img/example-half-desktop@2x.png 2x" alt="Живой пример">
+            <source media="(min-width: 768px)"
+              srcset="img/example-half-tablet.png 1x, img/example-half-tablet@2x.png 2x" alt="Живой пример">
+            <img class="example__image example__image--from" src="img/example-before-mobile.png"
+              srcset="img/example-before-mobile@2x.png 2x" width="311" height="232" alt="Борис ДО" />
+          </picture>
+          <img class="example__image example__image--to visually-hidden" src="img/example-after-mobile.png" width="251"
+            height="240" alt="Борис ПОСЛЕ" />
+
+          <div class="example__from-to-toggle from-to-toggle">
+            <span class="from-to-toggle__span from-to-toggle__span--from">БЫЛО</span>
+            <div class="from-to-toggle__range range">
+              <div class="range__thumb">
+              </div>
+            </div>
+            <span class="from-to-toggle__span from-to-toggle__span--to">СТАЛО</span>
+          </div>
         </div>
       </div>
     </section>
-    <section class="address">
+    <section class="address address--white">
       <div class="address__directions-wrapper">
         <b class="address__slogan"><span>приглашаем</span> к&nbsp;сотрудничеству дилеров!</b>
         <address class="address__directions">
@@ -177,7 +181,7 @@
     <h2 class="visually-hidden">Контактная информация</h2>
     <div class="page-footer__wrapper">
       <a class="page-footer__logo-link logo-text">
-        <img src="img/text-logo.svg" width="128" height="24"
+        <img class="logo-text__image" src="img/text-logo.svg" width="128" height="24"
           alt="Логотип магазина функционального питания для котов «‎:Кэт Энерджи»‎:">
       </a>
       <div class="page-footer__socials socials">

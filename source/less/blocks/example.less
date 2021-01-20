@@ -8,11 +8,18 @@
   }
 
   @media (min-width: @desktop-screen) {
+    padding: 0;
+    background-image: linear-gradient(@basic-white 194px, @basic-grey-example 194px);
+  }
+}
+
+.example__positioner {
+  @media (min-width: @desktop-screen) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 0 25px 0;
-    background-color: @basic-grey-example;
+    margin: 0 auto;
+    width: @desktop-screen;
   }
 }
 
@@ -35,10 +42,9 @@
   }
 
   @media (min-width: @desktop-screen) {
-    margin: 0;
+    margin: 0 auto;
     padding: 58px 110px 76px;
-    flex-basis: 100%;
-    background-color: @basic-white;
+    width: @desktop-screen;
   }
 }
 
@@ -54,8 +60,8 @@
   }
 
   @media (min-width: @desktop-screen) {
-    padding: 66px 0 0 110px;
-    width: 546px;
+    padding: 70px 0 0 40px;
+    width: 471px;
   }
 }
 
@@ -138,7 +144,7 @@
     display: inline;
 
     &:first-of-type {
-      margin-right: 57px;
+      margin-right: 59px;
     }
   }
 }
@@ -172,7 +178,7 @@
   @media (min-width: @tablet-screen) {
     top: -191px;
     width: 708px;
-    height: 620px;
+    height: 656px;
   }
 }
 
@@ -185,9 +191,13 @@
 }
 
 .example__from-to-toggle {
-  padding: 255px 45px 0 47px;
+  padding: 255px 59px 0 64px;
 
   @media (min-width: @tablet-screen) {
     padding: 362px 60px 69px 57px;
+  }
+
+  @media (min-width: @tablet-screen) {
+    padding: 361px 41px 69px 79px;
   }
 }

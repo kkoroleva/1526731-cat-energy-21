@@ -1,0 +1,43 @@
+.pet-owner-contacts-list {
+  .list-reset;
+  padding: 35px 20px 24px 20px;
+  color: @basic-text;
+
+  @media (min-width: @tablet-screen) {
+    padding: 76px 65px 65px 40px;
+  }
+
+  @media (min-width: @desktop-screen) {
+    display: flex;
+    justify-content: space-between;
+    padding: 76px 40px 67px 40px;
+  }
+}
+
+.pet-owner-contacts-list__item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 14px 0;
+
+
+  &:last-of-type {
+    margin: 0;
+  }
+
+  @media (min-width: @tablet-screen) {
+    margin: 0 0 20px 0;
+  }
+
+  @media (min-width: @desktop-screen) {
+    margin: 0;
+    width: 570px;
+  }
+}
+
+.pet-owner-contacts-list__label {
+  margin: 10px 10px 0 0;
+
+  @media (min-width: @tablet-screen) {
+    margin: 11px 10px 0 0;
+  }
+}
