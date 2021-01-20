@@ -1,10 +1,10 @@
 .example {
-  padding: 27px 20px 25px 20px;
+  padding: 27px 0 36px;
   background-color: @basic-grey-example;
 
   @media (min-width: @tablet-screen) {
-    padding: 43px 30px 25px 30px;
-    background-color: @basic-white;
+    padding: 43px 30px 0 30px;
+    background-image: linear-gradient(@basic-white 619px, @basic-grey-example 619px);
   }
 
   @media (min-width: @desktop-screen) {
@@ -14,157 +14,180 @@
     padding: 0 0 25px 0;
     background-color: @basic-grey-example;
   }
+}
 
-  &__headline {
-    margin: 0 0 33px 0;
+.example__headline {
+  margin: 0 auto 33px auto;
+  padding: 0 20px;
+  width: @mobile-screen;
+  .set-special-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
 
-    .set-special-font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 40px;
-
-    @media (min-width: @tablet-screen) {
-      margin: 0 0 63px 0;
-      font-size: 60px;
-      line-height: 60px;
-    }
-
-    @media (min-width: @desktop-screen) {
-      margin: 0;
-      padding: 58px 110px 76px;
-      flex-basis: 100%;
-      background-color: @basic-white;
-    }
+  @media (min-width: @tablet-screen) {
+    margin: 0 auto 63px auto;
+    padding: 0 0 0 30px;
+    width: @tablet-screen;
+    font-size: 60px;
+    line-height: 60px;
   }
 
-  &__wrapper {
-    @media (min-width: @tablet-screen) {
-      padding-bottom: 255px;
-    }
+  @media (min-width: @desktop-screen) {
+    margin: 0;
+    padding: 58px 110px 76px;
+    flex-basis: 100%;
+    background-color: @basic-white;
+  }
+}
 
-    @media (min-width: @desktop-screen) {
-      padding: 66px 0 0 110px;
-      width: 546px;
-    }
+.example__wrapper {
+  margin: 0 auto;
+  width: @mobile-screen;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-screen) {
+    width: @tablet-screen - 60px;
+    padding: 0;
+    padding-bottom: 224px;
   }
 
-  &__description {
-    margin: 0 0 25px 0;
-    .set-basic-font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    color: @basic-text;
+  @media (min-width: @desktop-screen) {
+    padding: 66px 0 0 110px;
+    width: 546px;
+  }
+}
 
-    @media (min-width: @tablet-screen) {
-      margin: 0 0 54px 0;
-      font-size: 16px;
-      line-height: 24px;
-    }
+.example__description {
+  margin: 0 0 25px 0;
+  .set-basic-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: @basic-text;
 
-    @media (min-width: @desktop-screen) {
-      margin: 0 0 69px 0;
-    }
+  @media (min-width: @tablet-screen) {
+    margin: 0 0 54px 0;
+    font-size: 16px;
+    line-height: 24px;
   }
 
-  &__stats-wrapper {
-    @media (min-width: @tablet-screen) {
-      display: flex;
-      justify-content: space-between;
-    }
+  @media (min-width: @desktop-screen) {
+    margin: 0 0 69px 0;
+  }
+}
 
-    @media (min-width: @desktop-screen) {
-      display: block;
-    }
+.example__stats-wrapper {
+  @media (min-width: @tablet-screen) {
+    display: flex;
+    justify-content: space-between;
   }
 
-  &__stats-list {
-    .list-reset;
-    margin: 0 0 34px 0;
-
-    @media (min-width: @tablet-screen) {
-      margin: 0;
-    }
-
-    @media (min-width: @desktop-screen) {
-      margin: 0 0 60px 0;
-    }
-  }
-
-  &__price {
+  @media (min-width: @desktop-screen) {
     display: block;
+  }
+}
+
+.example__stats-list {
+  .list-reset;
+  margin: 0 0 34px 0;
+
+  @media (min-width: @tablet-screen) {
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-screen) {
+    margin: 0 0 60px 0;
+  }
+}
+
+.example__price {
+  display: block;
+  margin: 0 0 42px 0;
+  .set-special-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-screen) {
     margin: 0 0 42px 0;
-    .set-special-font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
+    padding: 11px 0 0 0;
+    font-size: 20px;
     line-height: 20px;
-    text-align: center;
-    text-transform: uppercase;
-
-    @media (min-width: @tablet-screen) {
-      margin: 0 0 42px 0;
-      padding: 11px 0 0 0;
-      font-size: 20px;
-      line-height: 20px;
-    }
-
-    @media (min-width: @desktop-screen) {
-      margin: 0 0 42px 0;
-      padding: 0;
-      text-align: left;
-    }
-
-    & span {
-      @media (min-width: @tablet-screen) {
-        display: block;
-        text-align: right;
-      }
-
-      @media (min-width: @desktop-screen) {
-        display: inline;
-
-
-        &:first-of-type {
-          margin-right: 57px;
-        }
-      }
-    }
   }
 
-  &__from-to-wrapper {
-    position: relative;
-    width: 280px;
+  @media (min-width: @desktop-screen) {
+    margin: 0 0 42px 0;
+    padding: 0;
+    text-align: left;
+  }
+}
 
-    @media (min-width: @tablet-screen) {
-      width: 708px;
-      background-color: @basic-grey-example;
-    }
-
-    @media (min-width: @desktop-screen) {
-      margin-right: 70px;
-      width: 690px;
-    }
+.example__price span {
+  @media (min-width: @tablet-screen) {
+    display: block;
+    text-align: right;
   }
 
-  &__image {
-    position: absolute;
+  @media (min-width: @desktop-screen) {
+    display: inline;
 
-    @media (min-width: @tablet-screen) {
-      top: -191px;
-      width: 708px;
-      height: 549px;
-      /*для тестов*/
+    &:first-of-type {
+      margin-right: 57px;
     }
   }
+}
 
-  &__from-to-toggle {
-    padding: 255px 25px 0 27px;
+.example__price-label {
+  @media (min-width: @tablet-screen) {
+    margin-bottom: 10px;
+  }
+}
 
-    @media (min-width: @tablet-screen) {
-      padding: 358px 61px 64px 57px;
-    }
+.example__from-to-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: @mobile-screen;
+
+
+  @media (min-width: @tablet-screen) {
+    width: 708px;
+    background-color: @basic-grey-example;
+  }
+
+  @media (min-width: @desktop-screen) {
+    margin-right: 70px;
+    width: 690px;
+  }
+}
+
+.example__image {
+  position: absolute;
+
+  @media (min-width: @tablet-screen) {
+    top: -191px;
+    width: 708px;
+    height: 620px;
+  }
+}
+
+.example__image--to {
+  left: 37px;
+
+  @media (min-width: @tablet-screen) {
+    display: none;
+  }
+}
+
+.example__from-to-toggle {
+  padding: 255px 45px 0 47px;
+
+  @media (min-width: @tablet-screen) {
+    padding: 362px 60px 69px 57px;
   }
 }
