@@ -1,3 +1,7 @@
+.form {
+  overflow-x: hidden;
+}
+
 .form__top-wrapper {
   margin: 0 auto;
   padding: 30px 20px 0 20px;
@@ -94,11 +98,17 @@
   padding: 10px 19px 10px 19px;
   width: 100%;
   height: 45px;
+  .set-special-font;
+  font-size: 14px;
+  line-height: 18px;
   border: 1px solid @form-field-border;
 
   @media (min-width: @tablet-screen) {
-    padding: 16px 19px 10px 19px;
+    padding: 10px 19px 10px 19px;
     height: 52px;
+    font-size: 20px;
+    line-height: 30px;
+    color: @basic-text;
   }
 
   &::placeholder {
@@ -123,11 +133,13 @@
   }
 
   &:focus {
+    padding-left: 18px;
     border: 2px solid @form-field-border-focus;
     outline: transparent;
   }
 
   &:invalid {
+    padding-left: 18px;
     border: 2px solid @form-error-field-border;
   }
 }
@@ -135,6 +147,7 @@
 .form__headline {
   position: relative;
   margin: 0;
+
   .set-special-font;
   font-style: normal;
   font-weight: 400;
@@ -175,6 +188,10 @@
 
     @media (min-width: @desktop-screen) {
       padding: 69px 40px 0 40px;
+    }
+
+    &::before {
+      top: 87px;
     }
   }
 
