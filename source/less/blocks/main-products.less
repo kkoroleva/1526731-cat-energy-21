@@ -1,0 +1,144 @@
+.main-products {
+  padding: 0;
+
+  @media (min-width: @tablet-screen) {
+    padding: 0 30px 68px 30px;
+  }
+
+  @media (min-width: @desktop-screen) {
+    padding: 0 110px 76px 110px;
+  }
+}
+
+.main-products__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  .list-reset;
+
+  @media (min-width: @tablet-screen) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 59px;
+    column-gap: 60px;
+  }
+
+  @media (min-width: @desktop-screen) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 63px;
+    column-gap: 80px;
+  }
+}
+
+.main-products__item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding: 20px 20px 24px 18px;
+  border-top: 1px solid @divider-main-products;
+
+  @media (min-width: @tablet-screen) {
+    display: block;
+    padding: 8px 36px 40px 36px;
+
+    background-image: linear-gradient(@basic-white 81px, @basic-grey 81px);
+    border: none;
+  }
+
+  @media (min-width: @desktop-screen) {
+    padding: 1px 30px 40px 35px;
+  }
+
+  &:last-of-type {
+
+    border-bottom: 1px solid @divider-main-products;
+
+    @media (min-width: @tablet-screen) {
+      background-image: none;
+    }
+  }
+}
+
+.main-products__image {
+  margin: 0;
+  width: 140px;
+  height: 112px;
+
+  @media (min-width: @tablet-screen) {
+    margin: 0 42px 34px 42px;
+    width: 168px;
+    height: 200px;
+  }
+
+  @media (min-width: @desktop-screen) {
+    margin: 0 4px 46px 4px;
+    width: 172px;
+    height: 196px;
+  }
+}
+
+.main-products__info {
+  width: 142px;
+
+  @media (min-width: @tablet-screen) {
+    width: auto;
+  }
+}
+
+.main-products__link {
+  .list-reset;
+}
+
+.main-products__headline {
+  margin: 0 0 15px 0;
+  width: 76px;
+
+  .set-special-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: @catalog-product-headlines;
+
+  @media (min-width: @tablet-screen) {
+    margin: 0 0 21px 0;
+    width: 100%;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-screen) {
+    line-height: 21px;
+  }
+}
+
+.main-products__headline span {
+  @media (min-width: @tablet-screen) {
+    display: block;
+  }
+}
+
+.main-products__button {
+  display: block;
+  padding: 10px 0;
+  width: 100%;
+  height: 40px;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  @media (min-width: @tablet-screen) {
+    margin: 0 auto;
+    padding: 9px 0;
+    width: 248px;
+    height: 39px;
+  }
+
+  @media (min-width: @desktop-screen) {
+    width: 168px;
+    height: 40px;
+  }
+}
