@@ -1,22 +1,27 @@
 .additional-list {
   .list-reset;
-  padding: 34px 133px 34px 20px;
+  padding: 39px 133px 37px 20px;
   color: @basic-black;
 
   @media (min-width: @tablet-screen) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 57px 65px 65px 40px;
+    padding: 62px 65px 59px 40px;
+    width: 670px;
   }
 
   @media (min-width: @desktop-screen) {
-    padding: 57px 134px 61px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 104px;
+    padding: 62px 134px 66px 40px;
+    width: 100%;
   }
 }
 
 .additional-list__item {
-  margin: 0 0 24px 0;
+  margin: 0 0 23px 0;
   padding: 0 0 0 46px;
 
   &:last-of-type {
@@ -46,24 +51,24 @@
   content: "";
   display: block;
   position: absolute;
-  top: -6px;
-  left: -46px;
-  width: 30px;
-  height: 30px;
+  top: -4px;
+  left: -45px;
+  width: 28px;
+  height: 28px;
   box-shadow: 0 0 0 1px @form-field-border-hover;
   background-color: @basic-white;
 
   @media (min-width: @tablet-screen) {
-    top: -3px;
-    left: -60px;
-    width: 40px;
-    height: 40px;
+    top: -4px;
+    left: -58px;
+    width: 38px;
+    height: 38px;
   }
 }
 
 .additional-list__checkbox:checked + .additional-list__label::before {
   background-image: url("../img/checkbox-tick.svg");
-  background-size: 26px 26px;
+  background-size: 20px 20px;
   background-position: center;
   background-repeat: no-repeat;
 }

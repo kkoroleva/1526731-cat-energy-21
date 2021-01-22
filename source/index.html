@@ -7,7 +7,7 @@
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body main-page">
@@ -62,8 +62,15 @@
           Занялся собой? Займись котом!
         </p>
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/promo-can-desktop.png 1x, img/promo-can-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/promo-can-tablet.png 1x, img/promo-can-desktop@2x.png 2x">
+          <source type="image/webp" media="(min-width: 1440px)"
+            srcset="img/promo-can-desktop.webp 1x, img/promo-can-desktop@2x.webp 2x" alt="Пример продукта компании">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/promo-can-tablet.webp 1x, img/promo-can-tablet@2x.webp 2x" alt="Пример продукта компании">
+          <source type="image/webp" srcset="img/promo-can-mobile.webp 1x, img/promo-can-mobile@2x.webp 2x"
+          alt="Пример продукта компании">
+
+          <source media="(min-width: 1440px)" srcset="img/promo-can-desktop.png 1x, img/promo-can-desktop@2x.png 2x" alt="Пример продукта компании">
+          <source media="(min-width: 768px)" srcset="img/promo-can-tablet.png 1x, img/promo-can-desktop@2x.png 2x" alt="Пример продукта компании">
           <img class="promo__image" src="img/promo-can-mobile.png" srcset="img/promo-can-mobile@2x.png 2x" width="280"
             height="270" alt="Пример продукта компании" />
         </picture>
@@ -142,6 +149,13 @@
         </div>
         <div class="example__from-to-wrapper">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/example-half-desktop.webp 1x, img/example-half-desktop@2x.webp 2x" alt="Живой пример">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/example-half-tablet.webp 1x, img/example-half-tablet@2x.webp 2x" alt="Живой пример">
+            <source type="image/webp" srcset="img/example-before-mobile.webp 1x, img/example-before-mobile@2x.webp 2x"
+              alt="Живой пример">
+
             <source media="(min-width: 1440px)"
               srcset="img/example-half-desktop.png 1x, img/example-half-desktop@2x.png 2x" alt="Живой пример">
             <source media="(min-width: 768px)"
@@ -149,9 +163,12 @@
             <img class="example__image example__image--from" src="img/example-before-mobile.png"
               srcset="img/example-before-mobile@2x.png 2x" width="311" height="232" alt="Борис ДО" />
           </picture>
-          <img class="example__image example__image--to visually-hidden" src="img/example-after-mobile.png" width="251"
-            height="240" alt="Борис ПОСЛЕ" />
-
+          <picture>
+            <source type="image/webp" srcset="img/example-after-mobile.webp 1x, img/example-after-mobile@2x.webp 2x"
+              alt="Борис ПОСЛЕ">
+            <img class="example__image example__image--to visually-hidden" src="img/example-after-mobile.png"
+              width="251" height="240" alt="Борис ПОСЛЕ" />
+          </picture>
           <div class="example__from-to-toggle from-to-toggle">
             <span class="from-to-toggle__span from-to-toggle__span--from">БЫЛО</span>
             <div class="from-to-toggle__range range">
@@ -188,16 +205,25 @@
         <ul class="socials__list">
           <li class="socials__item">
             <a href="#" class="socials__link socials__link--vk">
+              <svg class="socials__icon" width="23" height="16">
+                <use xlink:href="img/sprite.svg#socials__link--vk"></use>
+              </svg>
               <p class="visually-hidden">Вконтакте</p>
             </a>
           </li>
           <li class="socials__item">
             <a href="#" class="socials__link socials__link--ig">
+              <svg class="socials__icon" width="16" height="16">
+                <use xlink:href="img/sprite.svg#socials__link--ig"></use>
+              </svg>
               <p class="visually-hidden">Инстаграмм</p>
             </a>
           </li>
           <li class="socials__item">
             <a href="#" class="socials__link socials__link--fb">
+              <svg class="socials__icon" width="13" height="20">
+                <use xlink:href="img/sprite.svg#socials__link--fb"></use>
+              </svg>
               <p class="visually-hidden">Фейсбук</p>
             </a>
           </li>
@@ -205,7 +231,9 @@
       </div>
       <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/">
         <p class="copyright__text">HTML Academy</p>
-        <img class="copyright__logo" src="img/logo-html-academy.svg" alt="HTML Academy" />
+        <svg class="copyright__logo" width="27" height="34">
+          <use xlink:href="img/sprite.svg#footer-logo-academy"></use>
+        </svg>
       </a>
     </div>
   </footer>

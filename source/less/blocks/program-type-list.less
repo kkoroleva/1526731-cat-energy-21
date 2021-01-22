@@ -1,23 +1,24 @@
 .program-type-list {
   .list-reset;
-  padding: 23px 0 25px 40px;
+  padding: 27px 0 21px 66px;
   border-top: 1px solid @divider;
   border-bottom: 1px solid @divider;
   color: @special-form-text;
 
   @media (min-width: @tablet-screen) {
-    padding: 30px 88px 34px 88px;
+    padding: 28px 88px 29px 86px;
     width: 628px;
     border: 1px solid @form-field-border;
   }
 
   @media (min-width: @desktop-screen) {
+    padding: 31px 88px 29px 85px;
     width: 568px;
   }
 }
 
 .program-type-list__item {
-  margin: 0 0 24px 0;
+  margin: -1px 0 24px 0;
 
   &:last-of-type {
     margin: 0;
@@ -32,23 +33,29 @@
   content: "";
   display: block;
   position: absolute;
-  top: -6px;
-  left: -40px;
-  width: 30px;
-  height: 30px;
+  top: -4px;
+  left: -45px;
+  width: 28px;
+  height: 28px;
   box-shadow: 0 0 0 1px @form-field-border-hover;
   border-radius: 50%;
   background-color: @basic-white;
 
   @media (min-width: @tablet-screen) {
-    top: 2px;
-    left: -60px;
+    top: -4px;
+    left: -58px;
+    width: 38px;
+    height: 38px;
   }
 }
 
 .program-type-list__radiobutton:checked + .program-type-list__label::before {
   border: 8px solid @basic-white;
   background-color: @basic-green;
+
+  @media (min-width: @tablet-screen) {
+    border-width: 10px;
+  }
 }
 
 .program-type-list__radiobutton:disabled + .program-type-list__label {

@@ -1,19 +1,11 @@
 .page-catalog {
-  margin: 0 auto;
-  width: @mobile-screen;
-
-  @media (min-width: @tablet-screen) {
-    width: @tablet-screen;
-  }
-
-  @media (min-width: @desktop-screen) {
-    width: @desktop-screen;
-  }
+  overflow-x: hidden;
 }
 
 .page-catalog__headline {
-  margin: 0;
+  margin: 0 auto;
   padding: 27px 20px 41px 20px;
+  width: @mobile-screen;
 
   .set-special-font;
   font-style: normal;
@@ -23,12 +15,14 @@
   color: @basic-black;
 
   @media (min-width: @tablet-screen) {
-    padding: 65px 30px 83px 30px;
+    padding: 62px 30px 83px 30px;
+    width: @tablet-screen;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: @desktop-screen) {
     padding: 74px 110px 84px 110px;
+    width: @desktop-screen;
   }
 }

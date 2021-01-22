@@ -4,7 +4,7 @@
   color: @basic-text;
 
   @media (min-width: @tablet-screen) {
-    padding: 76px 65px 65px 40px;
+    padding: 76px 37px 65px 40px;
   }
 
   @media (min-width: @desktop-screen) {
@@ -19,6 +19,11 @@
   justify-content: space-between;
   margin: 0 0 14px 0;
 
+  &:first-of-type .pet-owner-contacts-list__text-input {
+    @media (min-width: @tablet-screen) {
+      padding: 8px 17px 10px 23px;
+    }
+  }
 
   &:last-of-type {
     margin: 0;
@@ -35,9 +40,32 @@
 }
 
 .pet-owner-contacts-list__label {
+  position: relative;
   margin: 10px 10px 0 0;
 
   @media (min-width: @tablet-screen) {
-    margin: 11px 10px 0 0;
+    margin: 11px 16px 0 0;
   }
+}
+
+.pet-owner-contacts-list__icon {
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 250px;
+
+  @media (min-width: @tablet-screen) {
+    top: 7px;
+    left: 589px;
+  }
+
+  @media (min-width: @desktop-screen) {
+    top: 7px;
+    left: 522px;
+  }
+}
+
+.pet-owner-contacts-list__text-input:hover + .pet-owner-contacts-list__icon {
+  fill: @basic-green;
+  stroke: @basic-green;
 }
