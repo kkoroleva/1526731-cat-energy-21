@@ -7,7 +7,7 @@
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body main-page">
@@ -205,16 +205,25 @@
         <ul class="socials__list">
           <li class="socials__item">
             <a href="#" class="socials__link socials__link--vk">
+              <svg class="socials__icon" width="23" height="16">
+                <use xlink:href="img/sprite.svg#socials__link--vk"></use>
+              </svg>
               <p class="visually-hidden">Вконтакте</p>
             </a>
           </li>
           <li class="socials__item">
             <a href="#" class="socials__link socials__link--ig">
+              <svg class="socials__icon" width="16" height="16">
+                <use xlink:href="img/sprite.svg#socials__link--ig"></use>
+              </svg>
               <p class="visually-hidden">Инстаграмм</p>
             </a>
           </li>
           <li class="socials__item">
             <a href="#" class="socials__link socials__link--fb">
+              <svg class="socials__icon" width="13" height="20">
+                <use xlink:href="img/sprite.svg#socials__link--fb"></use>
+              </svg>
               <p class="visually-hidden">Фейсбук</p>
             </a>
           </li>
@@ -222,7 +231,9 @@
       </div>
       <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/">
         <p class="copyright__text">HTML Academy</p>
-        <img class="copyright__logo" src="img/logo-html-academy.svg" alt="HTML Academy" />
+        <svg class="copyright__logo" width="27" height="34">
+          <use xlink:href="img/sprite.svg#footer-logo-academy"></use>
+        </svg>
       </a>
     </div>
   </footer>

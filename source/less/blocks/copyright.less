@@ -22,7 +22,24 @@
   line-height: 18px;
   color: @basic-text;
 
+  &:hover,
+  &:focus {
+    color: @basic-green;
+  }
+
   @media (min-width: @tablet-screen) {
     padding: 6px 0 0 0;
+  }
+}
+
+.copyright__logo {
+  &:hover {
+    fill: @basic-green;
+    stroke: @basic-green;
+  }
+
+  &:focus {
+    fill: @basic-green;
+    stroke: @basic-green;
   }
 }

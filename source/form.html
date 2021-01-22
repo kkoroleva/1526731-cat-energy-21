@@ -7,7 +7,7 @@
   <title>HTML Academy: Кэт энерджи</title>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -66,7 +66,8 @@
           <ul class="form__general-information-list general-information-list">
             <li class="general-information-list__item">
               <label class="form__label general-information-list__label" for="enter-name">ИМЯ:*</label>
-              <input class="form__text-input" type="text" name="enter-name" id="enter-name" placeholder="Барсик" autofocus>
+              <input class="form__text-input" type="text" name="enter-name" id="enter-name" placeholder="Барсик"
+                autofocus>
             </li>
             <li class="general-information-list__item">
               <label class="form__label general-information-list__label" for="enter-weight">Вес&nbsp;(кг):*</label>
@@ -102,12 +103,22 @@
         <h3 class="form__headline form__headline--contacts">Контактные данные (владельца&nbsp;кота)</h3>
         <ul class="form__pet-owner-contacts-list pet-owner-contacts-list">
           <li class="pet-owner-contacts-list__item">
-            <label class="form__label pet-owner-contacts-list__label" for="enter-mail">E&#8209;mail:*</label>
+            <label class="form__label pet-owner-contacts-list__label" for="enter-mail">
+              E&#8209;mail:*
+              <svg class="pet-owner-contacts-list__icon" width="18" height="13">
+                <use xlink:href="img/sprite.svg#form-email"></use>
+              </svg>
+            </label>
             <input class="form__text-input pet-owner-contacts-list__text-input" type="email" name="enter-mail"
               id="enter-mail" placeholder="kuklachev@gmail.com">
           </li>
           <li class="pet-owner-contacts-list__item">
-            <label class="form__label pet-owner-contacts-list__label" for="enter-tel">Телефон:*</label>
+            <label class="form__label pet-owner-contacts-list__label" for="enter-tel">
+              Телефон:*
+              <svg class="pet-owner-contacts-list__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#form-phone"></use>
+              </svg>
+            </label>
             <input class="form__text-input pet-owner-contacts-list__text-input" type="tel" name="enter-tel"
               id="enter-tel" placeholder="8 (960) 900-60-90">
           </li>
@@ -119,7 +130,8 @@
         <h3 class="form__headline form__headline--additional">Дополнительно</h3>
         <ul class="form__additional-list additional-list">
           <li class="additional-list__item">
-            <input class="form__checkbox additional-list__checkbox" type="checkbox" name="check-sugar" id="check-sugar" checked>
+            <input class="form__checkbox additional-list__checkbox" type="checkbox" name="check-sugar" id="check-sugar"
+              checked>
             <label class="form__label additional-list__label" for="check-sugar">сахарозаменитель</label>
           </li>
           <li class="additional-list__item">
@@ -131,7 +143,8 @@
             <label class="form__label additional-list__label" for="check-milk">молоко</label>
           </li>
           <li class="additional-list__item">
-            <input class="form__checkbox additional-list__checkbox" type="checkbox" name="check-vitamins" id="check-vitamins">
+            <input class="form__checkbox additional-list__checkbox" type="checkbox" name="check-vitamins"
+              id="check-vitamins">
             <label class="form__label additional-list__label" for="check-vitamins">витамины</label>
           </li>
         </ul>
@@ -159,23 +172,32 @@
     <h2 class="visually-hidden">Контактная информация</h2>
     <div class="page-footer__wrapper">
       <a class="page-footer__logo-link logo-text">
-        <img src="img/text-logo.svg" width="128" height="24"
+        <img class="logo-text__image" src="img/text-logo.svg" width="128" height="24"
           alt="Логотип магазина функционального питания для котов «‎:Кэт Энерджи»‎:">
       </a>
       <div class="page-footer__socials socials">
         <ul class="socials__list">
           <li class="socials__item">
             <a href="#" class="socials__link socials__link--vk">
+              <svg class="socials__icon" width="23" height="16">
+                <use xlink:href="img/sprite.svg#socials__link--vk"></use>
+              </svg>
               <p class="visually-hidden">Вконтакте</p>
             </a>
           </li>
           <li class="socials__item">
             <a href="#" class="socials__link socials__link--ig">
+              <svg class="socials__icon" width="16" height="16">
+                <use xlink:href="img/sprite.svg#socials__link--ig"></use>
+              </svg>
               <p class="visually-hidden">Инстаграмм</p>
             </a>
           </li>
           <li class="socials__item">
             <a href="#" class="socials__link socials__link--fb">
+              <svg class="socials__icon" width="13" height="20">
+                <use xlink:href="img/sprite.svg#socials__link--fb"></use>
+              </svg>
               <p class="visually-hidden">Фейсбук</p>
             </a>
           </li>
@@ -183,7 +205,9 @@
       </div>
       <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/">
         <p class="copyright__text">HTML Academy</p>
-        <img class="copyright__logo" src="img/logo-html-academy.svg" alt="HTML Academy" />
+        <svg class="copyright__logo" width="27" height="34">
+          <use xlink:href="img/sprite.svg#footer-logo-academy"></use>
+        </svg>
       </a>
     </div>
   </footer>
