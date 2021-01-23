@@ -1,0 +1,39 @@
+.stats-table {
+  margin: 0 0 19px 0;
+  padding: 0;
+  width: 100%;
+  .set-basic-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: @basic-text;
+  border-collapse: collapse;
+
+  @media (min-width: @tablet-screen) {
+    margin: 0 0 33px 0;
+    font-size: 16px;
+  }
+}
+
+.stats-table__line {
+  @media (min-width: @tablet-screen) {
+    margin: 7px 0 9px 0;
+    height: 32px;
+    border-bottom: 1px solid @divider-2;
+  }
+}
+
+.stats-table__feature {
+  @media (min-width: @desktop-screen) {
+    padding-left: 4px;
+  }
+}
+
+.stats-table__value {
+  text-align: right;
+
+  @media (min-width: @desktop-screen) {
+    padding-right: 8px;
+  }
+}

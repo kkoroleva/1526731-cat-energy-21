@@ -1,0 +1,151 @@
+.how {
+  margin: 0 auto;
+  padding: 0 20px 46px 20px;
+  width: @mobile-screen;
+
+  @media (min-width: @tablet-screen) {
+    padding: 0 30px 9px 30px;
+    width: @tablet-screen;
+    border-bottom: 1px solid @divider-3;
+  }
+
+  @media (min-width: @desktop-screen) {
+    padding: 0 110px 11px 110px;
+    width: @desktop-screen;
+    border: none;
+  }
+}
+
+.how__headline {
+  margin: 0 0 40px 0;
+  .set-special-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+
+  @media (min-width: @tablet-screen) {
+    margin: 0 0 32px 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.how__list {
+  .list-reset;
+  padding: 0 0 0 80px;
+
+  @media (min-width: @tablet-screen) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 134px;
+    grid-row-gap: 37px;
+    padding: 0 76px 37px 0;
+  }
+
+  @media (min-width: @desktop-screen) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 77px;
+    padding: 0;
+  }
+}
+
+.how__item {
+  position: relative;
+  margin: 0 0 26px 0;
+
+  .set-basic-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: @basic-text;
+
+  @media (min-width: @tablet-screen) {
+    margin: 0;
+    padding: 151px 0 0 0;
+    height: 280px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-screen) {
+    margin: 0;
+  }
+
+  &:last-of-type {
+    margin: 0;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -80px;
+    width: 60px;
+    height: 60px;
+    //background-size: 60px 60px;
+    background-position: center;
+
+    @media (min-width: @tablet-screen) {
+      top: 40px;
+      left: 2px;
+      width: 80px;
+      height: 80px;
+      background-size: 80px 80px;
+    }
+  }
+
+  &--benefit {
+    @media (min-width: @tablet-screen) {
+      width: 230px;
+      background: url("../img/how-benefit-back.svg") no-repeat 126px 40px;
+    }
+
+    &::before {
+      background-image: url("../img/how-benefit.svg");
+    }
+  }
+
+  &--powder {
+    @media (min-width: @tablet-screen) {
+      width: 246px;
+      background: url("../img/how-powder-back.svg") no-repeat 120px 38px;
+    }
+
+    &::before {
+      background-image: url("../img/how-powder.svg");
+    }
+  }
+
+  &--by-step {
+    @media (min-width: @tablet-screen) {
+      width: 247px;
+      background: url("../img/how-by-step-back.svg") no-repeat 124px 38px;
+    }
+
+    @media (min-width: @desktop-screen) {
+      padding-left: 2px;
+    }
+
+    &::before {
+      background-image: url("../img/how-by-step.svg");
+    }
+  }
+
+  &--result {
+    @media (min-width: @tablet-screen) {
+      width: 249px;
+      background: url("../img/how-result-back.svg") no-repeat 125px 40px;
+    }
+
+    @media (min-width: @desktop-screen) {
+      padding-left: 3px;
+    }
+
+    &::before {
+      background-image: url("../img/how-result.svg");
+    }
+  }
+}

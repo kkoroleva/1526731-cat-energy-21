@@ -1,0 +1,32 @@
+.button {
+  .set-special-font;
+  text-transform: uppercase;
+
+  &--green {
+    background-color: @basic-green;
+    color: @basic-white;
+
+    &:hover {
+      background-color: @basic-darker-green;
+    }
+
+    &:focus {
+      background-color: @basic-darker-green;
+      color: @button-pressed;
+    }
+  }
+
+  &--grey {
+    background-color: @basic-grey;
+    color: @basic-text;
+
+    &:hover {
+      background-color: @basic-grey-button-hover;
+    }
+
+    &:focus {
+      background-color: @basic-grey-button-hover;
+      color: @button-grey-pressed;
+    }
+  }
+}
