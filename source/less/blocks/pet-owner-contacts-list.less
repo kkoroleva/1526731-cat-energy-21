@@ -15,13 +15,15 @@
 }
 
 .pet-owner-contacts-list__item {
-  display: flex;
-  justify-content: space-between;
   margin: 0 0 14px 0;
 
   &:first-of-type .pet-owner-contacts-list__text-input {
     @media (min-width: @tablet-screen) {
       padding: 8px 17px 10px 23px;
+    }
+
+    &:focus {
+      padding-left: 21px;
     }
   }
 
@@ -40,7 +42,13 @@
 }
 
 .pet-owner-contacts-list__label {
+  display: flex;
+  justify-content: space-between;
   position: relative;
+  width: 100%;
+}
+
+.pet-owner-contacts-list__label span {
   margin: 10px 10px 0 0;
 
   @media (min-width: @tablet-screen) {
@@ -54,18 +62,48 @@
   top: 4px;
   left: 250px;
 
+  &--email {
+    stroke: @special-form-text;
+    fill: none;
+  }
+
+  &--phone {
+    fill: @special-form-text;
+  }
+
   @media (min-width: @tablet-screen) {
-    top: 7px;
-    left: 589px;
+    top: 16px;
+    left: 594px;
   }
 
   @media (min-width: @desktop-screen) {
     top: 7px;
     left: 522px;
   }
+
+  &:hover {
+    fill: @basic-green;
+  }
 }
 
-.pet-owner-contacts-list__text-input:hover + .pet-owner-contacts-list__icon {
-  fill: @basic-green;
-  stroke: @basic-green;
+.pet-owner-contacts-list__text-input:focus + .pet-owner-contacts-list__icon {
+  &--email {
+    stroke: @basic-green;
+    fill: none;
+  }
+
+  &--phone {
+    fill: @basic-green;
+  }
+}
+
+.pet-owner-contacts-list__text-input:invalid + .pet-owner-contacts-list__icon {
+  &--email {
+    fill: none;
+    stroke: @form-error-field-border;
+  }
+
+  &--phone {
+    fill: @form-error-field-border;
+  }
 }

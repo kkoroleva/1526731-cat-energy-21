@@ -12,6 +12,14 @@
   }
 }
 
+.copyright:hover .copyright__text,
+.copyright:hover .copyright__logo,
+.copyright:focus .copyright__text,
+.copyright:focus .copyright__logo {
+  color: @basic-green;
+  fill: @basic-green;
+}
+
 .copyright__text {
   margin: 0;
   padding: 6px 0 0 0;
@@ -22,24 +30,11 @@
   line-height: 18px;
   color: @basic-text;
 
-  &:hover,
-  &:focus {
-    color: @basic-green;
-  }
-
   @media (min-width: @tablet-screen) {
     padding: 6px 0 0 0;
   }
 }
 
 .copyright__logo {
-  &:hover {
-    fill: @basic-green;
-    stroke: @basic-green;
-  }
-
-  &:focus {
-    fill: @basic-green;
-    stroke: @basic-green;
-  }
+  fill: @footer-socials;
 }

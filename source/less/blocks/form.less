@@ -1,5 +1,5 @@
 .form {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .form__top-wrapper {
@@ -137,9 +137,13 @@
   }
 
   &:focus {
-    padding-left: 18px;
+    padding-left: 15px;
     border: 2px solid @form-field-border-focus;
     outline: transparent;
+
+    @media (min-width: @tablet-screen) {
+      padding-left: 16px;
+    }
   }
 
   &:invalid {
@@ -318,9 +322,10 @@
     float: right;
     padding: 16px 145px 0 0;
     font-size: 16px;
+    width: 324px;
   }
 
-  @media (min-width: @tablet-screen) {
+  @media (min-width: @desktop-screen) {
     padding: 17px 0 0 0;
     width: 610px;
     text-align: left;
