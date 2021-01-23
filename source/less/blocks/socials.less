@@ -35,76 +35,52 @@
   &:focus {
     opacity: @link-text-pressed-opacity;
   }
+}
 
+.socials__link:hover .socials__icon,
+.socials__link:focus .socials__icon {
+  &--vk, &--ig {
+    fill: @basic-green;
+  }
+  &--fb {
+    stroke: @basic-green;
+  }
+}
+
+.socials__icon {
   &--vk {
     width: 23px;
     height: 16px;
-    //background: url("../img/socials__link--vk.svg") no-repeat;
-    background-size: 23px 16px;
+    fill: @footer-socials;
 
     @media (min-width: @tablet-screen) {
+      margin: 5px 0 0 0;
       width: 30px;
       height: 22px;
-      background-size: 30px 22px;
     }
   }
 
   &--ig {
     width: 16px;
     height: 16px;
-    //background: url("../img/socials__link--ig.svg") no-repeat;
-    background-size: 16px 16px;
+    fill: @footer-socials;
 
     @media (min-width: @tablet-screen) {
+      margin: 8px 0 0 5px;
       width: 23px;
       height: 23px;
-      background-size: 23px 23px;
     }
   }
 
   &--fb {
     width: 22px;
     height: 22px;
-    //background: url("../img/socials__link--fb.svg") no-repeat;
-    background-size: 22px 22px;
+    fill: none;
+    stroke: @footer-socials;
 
     @media (min-width: @tablet-screen) {
       width: 28px;
       height: 33px;
-      background-size: 28px 33px;
     }
-  }
-}
-
-.socials__icon {
-  &:first-of-type {
-    @media (min-width: @tablet-screen) {
-      width: 30px;
-      height: 22px;
-    }
-  }
-
-  &:nth-of-type(2) {
-    @media (min-width: @tablet-screen) {
-      width: 23px;
-      height: 23px;
-    }
-  }
-
-  &:nth-of-type(3) {
-    @media (min-width: @tablet-screen) {
-      width: 28px;
-      height: 33px;
-    }
-  }
-
-  &:hover {
-    fill: none;
-    stroke: @basic-green;
-  }
-
-  &:focus {
-    fill: none;
-    stroke: @basic-green;
   }
 }
