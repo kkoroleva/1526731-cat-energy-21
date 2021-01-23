@@ -13,10 +13,14 @@
       width: 50%;
       height: 696px;
       background: url("../img/promo-background-desktop.jpg") no-repeat @mixed-green-promo-desktop;
+      background-position: right;
+      background-size: 720px 694px;
       z-index: -1;
 
       @media (min-resolution: 2dppx) {
-        background: url("../img/promo-background-desktop@2x.jpg") no-repeat;
+        background: url("../img/promo-background-desktop@2x.jpg") no-repeat @mixed-green-promo-desktop;
+        background-size: 720px 694px;
+        background-position: right;
       }
     }
   }

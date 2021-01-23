@@ -10,6 +10,7 @@
   @media (min-width: @desktop-screen) {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 76px 40px 67px 40px;
   }
 }
@@ -19,7 +20,7 @@
 
   &:first-of-type .pet-owner-contacts-list__text-input {
     @media (min-width: @tablet-screen) {
-      padding: 8px 17px 10px 23px;
+      padding: 8px 50px 10px 23px;
     }
 
     &:focus {
@@ -59,10 +60,12 @@
 .pet-owner-contacts-list__icon {
   display: block;
   position: absolute;
-  top: 4px;
-  left: 250px;
+  top: 14px;
+  left: 247px;
 
   &--email {
+    top: 17px;
+    left: 246px;
     stroke: @special-form-text;
     fill: none;
   }
@@ -77,8 +80,11 @@
   }
 
   @media (min-width: @desktop-screen) {
-    top: 7px;
-    left: 522px;
+    left: 533px;
+
+    &--email {
+      top: 18px;
+    }
   }
 
   &:hover {
@@ -86,7 +92,7 @@
   }
 }
 
-.pet-owner-contacts-list__text-input:focus + .pet-owner-contacts-list__icon {
+.pet-owner-contacts-list__text-input:focus+.pet-owner-contacts-list__icon {
   &--email {
     stroke: @basic-green;
     fill: none;
@@ -97,7 +103,7 @@
   }
 }
 
-.pet-owner-contacts-list__text-input:invalid + .pet-owner-contacts-list__icon {
+.pet-owner-contacts-list__text-input:invalid+.pet-owner-contacts-list__icon {
   &--email {
     fill: none;
     stroke: @form-error-field-border;

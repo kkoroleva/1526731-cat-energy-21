@@ -5,8 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>HTML Academy: Кэт энерджи</title>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
-    rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -25,7 +23,7 @@
         <img src="img/text-logo.svg" width="101" height="18"
           alt="Логотип магазина функционального питания для котов «‎:Кэт Энерджи»‎:">
       </a>
-      <button class="page-header__nav-toggle nav-toggle nav-toggle--close" type="button" aria-valuetext="Открыть меню">
+      <button class="page-header__nav-toggle nav-toggle nav-toggle--close" type="button">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 -0.727046 0.686589 0.727046 2.00171 20)"
             stroke="black" stroke-width="1.5" />
@@ -82,18 +80,18 @@
           <h3 class="form__headline visually-hidden">Выбрать тип программы</h3>
           <ul class="form__program-type-list program-type-list">
             <li class="program-type-list__item">
-              <input class="form__radiobutton program-type-list__radiobutton" type="radio" name="radio-program-type"
-                id="radio-slim" checked>
+              <input class="form__radiobutton program-type-list__radiobutton visually-hidden" type="radio"
+                name="radio-program-type" id="radio-slim" checked>
               <label class="form__label program-type-list__label" for="radio-slim">Похудение</label>
             </li>
             <li class="program-type-list__item">
-              <input class="form__radiobutton program-type-list__radiobutton" type="radio" name="radio-program-type"
-                id="radio-gain">
+              <input class="form__radiobutton program-type-list__radiobutton visually-hidden" type="radio"
+                name="radio-program-type" id="radio-gain">
               <label class="form__label program-type-list__label" for="radio-gain">Набор массы</label>
             </li>
             <li class="program-type-list__item">
-              <input class="form__radiobutton program-type-list__radiobutton" type="radio" name="radio-program-type"
-                id="radio-help">
+              <input class="form__radiobutton program-type-list__radiobutton visually-hidden" type="radio"
+                name="radio-program-type" id="radio-help">
               <label class="form__label program-type-list__label" for="radio-help">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
@@ -131,31 +129,35 @@
         <h3 class="form__headline form__headline--additional">Дополнительно</h3>
         <ul class="form__additional-list additional-list">
           <li class="additional-list__item">
-            <input class="form__checkbox additional-list__checkbox" type="checkbox" name="check-sugar" id="check-sugar"
-              checked>
+            <input class="form__checkbox additional-list__checkbox visually-hidden" type="checkbox" name="check-sugar"
+              id="check-sugar" checked>
             <label class="form__label additional-list__label" for="check-sugar">сахарозаменитель</label>
           </li>
           <li class="additional-list__item">
-            <input class="form__checkbox additional-list__checkbox" type="checkbox" name="check-water" id="check-water">
+            <input class="form__checkbox additional-list__checkbox visually-hidden" type="checkbox" name="check-water"
+              id="check-water">
             <label class="form__label additional-list__label" for="check-water">питьевая вода</label>
           </li>
           <li class="additional-list__item">
-            <input class="form__checkbox additional-list__checkbox" type="checkbox" name="check-milk" id="check-milk">
+            <input class="form__checkbox additional-list__checkbox visually-hidden" type="checkbox" name="check-milk"
+              id="check-milk">
             <label class="form__label additional-list__label" for="check-milk">молоко</label>
           </li>
           <li class="additional-list__item">
-            <input class="form__checkbox additional-list__checkbox" type="checkbox" name="check-vitamins"
-              id="check-vitamins">
+            <input class="form__checkbox additional-list__checkbox visually-hidden" type="checkbox"
+              name="check-vitamins" id="check-vitamins">
             <label class="form__label additional-list__label" for="check-vitamins">витамины</label>
           </li>
         </ul>
-
-        <button class="button form__button button--green" type="submit">отправить заявку</button>
-        <p class="form__legend">* — Обязательные поля</p>
+        <div class="form__button-area">
+          <button class="button form__button button--green" type="submit">отправить заявку</button>
+          <p class="form__legend">* — Обязательные поля</p>
+        </div>
       </div>
     </form>
 
     <section class="address">
+      <h2 class="visually-hidden">Наше местоположение</h2>
       <div class="address__directions-wrapper">
         <b class="address__slogan"><span>приглашаем</span> к&nbsp;сотрудничеству дилеров!</b>
         <address class="address__directions">
@@ -164,7 +166,7 @@
       </div>
       <iframe class="address__map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858715723435!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1610809096697!5m2!1sru!2sru"
-        width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        width="320" height="362" allowfullscreen="" aria-hidden="false"
         tabindex="0"></iframe>
     </section>
   </main>
@@ -172,7 +174,7 @@
   <footer class="page__footer page-footer">
     <h2 class="visually-hidden">Контактная информация</h2>
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo-link logo-text">
+      <a href="index.html" class="page-footer__logo-link logo-text">
         <img class="logo-text__image" src="img/text-logo.svg" width="128" height="24"
           alt="Логотип магазина функционального питания для котов «‎:Кэт Энерджи»‎:">
       </a>
@@ -180,7 +182,7 @@
         <ul class="socials__list">
           <li class="socials__item">
             <a href="#" class="socials__link">
-              <svg class="socials__icon--vk" width="23" height="16">
+              <svg class="socials__icon socials__icon--vk" width="23" height="16">
                 <use xlink:href="img/sprite.svg#socials__link--vk"></use>
               </svg>
               <p class="visually-hidden">Вконтакте</p>
@@ -188,7 +190,7 @@
           </li>
           <li class="socials__item">
             <a href="#" class="socials__link">
-              <svg class="socials__icon--ig" width="16" height="16">
+              <svg class="socials__icon socials__icon--ig" width="16" height="16">
                 <use xlink:href="img/sprite.svg#socials__link--ig"></use>
               </svg>
               <p class="visually-hidden">Инстаграмм</p>
@@ -196,7 +198,7 @@
           </li>
           <li class="socials__item">
             <a href="#" class="socials__link">
-              <svg class="socials__icon--fb" width="13" height="20">
+              <svg class="socials__icon socials__icon--fb" width="13" height="20">
                 <use xlink:href="img/sprite.svg#socials__link--fb"></use>
               </svg>
               <p class="visually-hidden">Фейсбук</p>
