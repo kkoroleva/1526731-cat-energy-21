@@ -18,9 +18,10 @@
   .list-reset;
 
   @media (min-width: @desktop-screen) {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 31px;
   }
 }
 
