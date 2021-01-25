@@ -66,6 +66,10 @@
   }
 }
 
+.additional-list__checkbox:focus + .additional-list__label::before {
+  outline: auto;
+}
+
 .additional-list__checkbox:checked + .additional-list__label::before {
   background-image: url("../img/checkbox-tick.svg");
   background-size: 20px 20px;
