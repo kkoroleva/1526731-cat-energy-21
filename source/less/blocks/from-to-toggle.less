@@ -1,5 +1,6 @@
 .from-to-toggle {
   display: flex;
+  position: relative;
   justify-content: space-between;
 
   .set-special-font;
@@ -26,7 +27,7 @@
 
 .from-to-toggle__span {
   margin: 8px 0 0 0;
-  //cursor: pointer;
+  .link-normalize;
 
   @media (min-width: @tablet-screen) {
     margin: 0;
@@ -37,8 +38,8 @@
       border-bottom: 1px solid @from-to-toggle-border;
     }
 
-    &:focus {
-      outline: auto;
+    &:focus,
+    &:active {
       border-bottom: none;
     }
   }
