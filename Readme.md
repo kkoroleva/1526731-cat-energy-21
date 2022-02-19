@@ -7,7 +7,7 @@
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
 
-`source/index.html`
+[source/index.html](Work prototype)
 
 Полезный файл:
 
